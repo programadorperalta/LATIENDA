@@ -1,0 +1,11 @@
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp7.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\obj\Debug\Tp7.Dominio.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\obj\Debug\Tp7.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\obj\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Dominio\obj\Debug\Tp7.Dominio.pdb

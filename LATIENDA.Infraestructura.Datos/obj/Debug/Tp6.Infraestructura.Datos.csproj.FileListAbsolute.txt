@@ -1,0 +1,16 @@
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp6.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp6.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp6.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp6.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.csproj.CopyComplete
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp6.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp6.Infraestructura.Datos.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.Migrations.NuevaEntidad_Productos.resources

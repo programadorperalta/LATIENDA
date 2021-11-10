@@ -1,0 +1,48 @@
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CopyComplete
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.Migrations.NuevaEntidad_Productos.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.Migrations.NuevaEntidad_Productos.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CopyComplete
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.CopyComplete
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.Migrations.NuevasEntidades_Productos_Marcas_Rubros_Empleados_Usuarios.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Infraestructura.Datos\obj\Debug\Tp7.Infraestructura.Datos.csproj.GenerateResource.cache

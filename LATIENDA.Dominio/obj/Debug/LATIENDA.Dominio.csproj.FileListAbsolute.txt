@@ -1,0 +1,6 @@
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\bin\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\bin\Debug\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\obj\Debug\LATIENDA.Dominio.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\obj\Debug\LATIENDA.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\obj\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Dominio\obj\Debug\LATIENDA.Dominio.pdb

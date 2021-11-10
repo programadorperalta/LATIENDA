@@ -1,0 +1,94 @@
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Presentacion.exe.config
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Unity.Abstractions.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Unity.Container.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Unity.Abstractions.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\bin\Debug\Unity.Container.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Properties.Resources.resources
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CopyComplete
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.AgregarProductoVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.PrincipalVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ListarProductosVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ModificarProductoVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.VistaBase.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.AgregarProductoVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.PrincipalVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Properties.Resources.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ListarProductosVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ModificarProductoVista.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.VistaBase.resources
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.exe.config
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Unity.Abstractions.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Unity.Container.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Unity.Abstractions.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\bin\Debug\Unity.Container.pdb
+C:\Users\PERALTA-PC\Desktop\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CopyComplete
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Unity.Abstractions.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Unity.Container.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Tp7.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Unity.Abstractions.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\bin\Debug\Unity.Container.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.AgregarProductoVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.PrincipalVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Properties.Resources.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ListarProductosVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.ModificarProductoVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.VistaBase.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.csproj.CopyComplete
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\TP7 - copia\Tp7\Tp7.Presentacion\obj\Debug\Tp7.Presentacion.Vistas.AutenticarUsuario.resources

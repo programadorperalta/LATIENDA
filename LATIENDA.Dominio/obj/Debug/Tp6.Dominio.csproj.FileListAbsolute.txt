@@ -1,0 +1,6 @@
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\bin\Debug\Tp6.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\bin\Debug\Tp6.Dominio.pdb
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp6.Dominio.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp6.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp6.Dominio.dll
+C:\Users\PERALTA-PC\Desktop\Tp6_Ejemplo\Tp6.Dominio\obj\Debug\Tp6.Dominio.pdb
