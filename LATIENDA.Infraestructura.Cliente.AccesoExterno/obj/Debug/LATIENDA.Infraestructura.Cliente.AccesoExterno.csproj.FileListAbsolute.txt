@@ -1,0 +1,10 @@
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\obj\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\obj\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\obj\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\obj\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\bin\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\bin\Debug\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Cliente.AccesoExterno\obj\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.csproj.CopyComplete

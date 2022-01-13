@@ -8,64 +8,51 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class Sucursal : Tienda
     {
-        #region Atributos 
-        private TipodeSucursal _tipodesucursal;
-        private Empleado _empleado;
-        private List<Empleado> _empleados;
-        private List<Venta> _ventas;
-        private Venta _venta;
+        #region Atributos
+        private int _numero;
+        private PuntodeVenta _puntodeventa; // puede tener mas de un punto de venta 
         private Stock _stock;
-        private List<Stock> stocks;
-        private List<PuntodeVenta> _puntosdeventa;
+        private Empleado _empleado;
         #endregion
 
-        #region Constructores
         public Sucursal()
         {
-            _cuit = base.Cuit;
-            _ventas = new List<Venta>();
-            _empleados = new List<Empleado>();
+
         }
 
-        public Sucursal(TipodeSucursal tipo,List<Empleado> empleados,List<Stock> stocks,List<PuntodeVenta> puntodeVentas)
+        public Sucursal(int numero, PuntodeVenta puntodeVenta, Stock stock, Empleado empleado)
         {
+            Numero = numero;
+            PuntodeVenta = puntodeVenta;
+            Stock = stock;
+            Empleado = empleado;
 
         }
 
-        #endregion
 
         #region Propiedades
-        public TipodeSucursal TipodeSucursal { get { return _tipodesucursal; } set { _tipodesucursal = value; } }
-        public Empleado Empleado { get { return _empleado; } set { _empleado = value; } }
-        public Venta Venta { get { return _venta; } set { _venta = value; } }
-        public Stock Stock { get { return _stock; } set { _stock = value; } }
+
+        public int Numero { get { return _numero; } set { _numero = value; } }
+
+        public PuntodeVenta PuntodeVenta
+        {
+            get { return _puntodeventa; }
+            set { _puntodeventa = value; }
+        }
+
+        public Stock Stock
+        {
+            get { return _stock; }
+            set { _stock = value; }
+        }
+
+        public Empleado Empleado
+        {
+            get { return _empleado; }
+            set { _empleado = value; }
+        }
+
         #endregion
-
-        public void AgregarVentas(Venta venta)
-        {
-            _ventas.Add(venta);
-        }
-
-        public void AgregarEmpleados(Empleado empleado)
-        {
-            _empleados.Add(empleado);
-        }
-        
-        public List<Empleado> GetEmpleados()
-        {
-            return _empleados;
-        }
-
-        public List<Venta> GetVentas()
-        {
-            return _ventas;
-        }
-
-
-        public void AgregarPuntosdeVenta(List<PuntodeVenta> puntodeVentas)
-        {
-            
-        }
 
     }
 }

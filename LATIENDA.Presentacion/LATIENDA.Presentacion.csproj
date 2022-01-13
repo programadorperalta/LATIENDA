@@ -194,6 +194,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Dominio.Inventario.datasource" />
     <None Include="Properties\DataSources\Dominio.Producto.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Producto.datasource" />
     <None Include="Properties\DataSources\Tp6.Dominio.Producto.datasource" />
     <None Include="Properties\DataSources\Tp7.Dominio.Entidades.Usuario.datasource" />
     <None Include="Properties\DataSources\Tp7.Dominio.Marca.datasource" />

@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class Talle
     {
         #region Atributos 
+        public int ID { get; set; }
         private string _descripcion;
         private TipodeTalle _tipodetalle;
         #endregion
@@ -20,7 +21,8 @@ namespace LATIENDA.Dominio.Entidades
 
         public Talle(string descripcion,TipodeTalle tipodetalle)
         {
-
+            Descripcion = descripcion;
+            TipodeTalle = tipodetalle;
         }
 
 

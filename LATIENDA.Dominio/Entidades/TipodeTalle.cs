@@ -9,20 +9,19 @@ namespace LATIENDA.Dominio.Entidades
     public class TipodeTalle
     {
         #region Atributos
+        public int ID { get; set; }
         private string _descripciontipodetalle;
-        private List<Talle> _talles;
-        
         #endregion
 
         #region Constructores
+        public TipodeTalle()
+        {
+
+        }
+
         public TipodeTalle(string descripcion)
         {
             Descriptiontipodetalle = descripcion;
-        }
-
-        public TipodeTalle(List<Talle> talles)
-        {
-
         }
 
         #endregion

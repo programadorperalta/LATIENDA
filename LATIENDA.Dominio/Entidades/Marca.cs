@@ -8,6 +8,7 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class Marca
     {
+        public int ID { get; set; }
         private int _numero;
         private string _descripcion;
 
@@ -18,7 +19,8 @@ namespace LATIENDA.Dominio.Entidades
 
         public Marca(int numero,string descripcion)
         {
-
+            Numero = numero;
+            Descripcion = descripcion;
         }
 
         public Marca(Marca aCopiar)

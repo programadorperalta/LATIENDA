@@ -8,6 +8,7 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class Tienda
     {
+        public int ID { get; set; }
         public long _cuit;
         public CondicionTributaria _condiciontributaria;
         public List<Sucursal> _sucursales;
@@ -27,7 +28,7 @@ namespace LATIENDA.Dominio.Entidades
         }
 
         
-        public long Cuit { get { return _cuit; } set { } }
+        public long Cuit { get { return _cuit; } set { _cuit = value; } }
 
 
     }

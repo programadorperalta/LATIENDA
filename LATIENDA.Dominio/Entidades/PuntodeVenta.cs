@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class PuntodeVenta
     {
         #region Atributos 
+        public int ID { get; set; }
         private int _numero;
         private Venta _venta;
         #endregion
@@ -20,11 +21,6 @@ namespace LATIENDA.Dominio.Entidades
             Numero = numero;
         }
 
-        public PuntodeVenta(PuntodeVenta aCopiar)
-        {
-            Numero = aCopiar.Numero;
-            Venta = new Venta();
-        }
         #endregion
 
 

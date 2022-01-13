@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class Usuario
     {
         #region Atributos
+        public int ID { get; set; }
         private string _nombredeusuario;
         private string _clave;
         private RolUsuario _rolusuario;

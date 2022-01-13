@@ -42,17 +42,12 @@ namespace LATIENDA.Presentacion.Vistas
             this.BusquedaText = new System.Windows.Forms.ToolStripTextBox();
             this.lista = new System.Windows.Forms.DataGridView();
             this.bsProducto = new System.Windows.Forms.BindingSource(this.components);
-            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rubro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcentajeIva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MargendeGanancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NetoGravado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CostoConIva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PreciodeVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).BeginInit();
@@ -132,6 +127,7 @@ namespace LATIENDA.Presentacion.Vistas
             // 
             // BusquedaText
             // 
+            this.BusquedaText.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BusquedaText.Name = "BusquedaText";
             this.BusquedaText.Size = new System.Drawing.Size(338, 37);
             this.BusquedaText.TextChanged += new System.EventHandler(this.BusquedaText_TextChanged);
@@ -145,17 +141,12 @@ namespace LATIENDA.Presentacion.Vistas
             this.lista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigoDataGridViewTextBoxColumn,
+            this.Codigo,
+            this.Descripcion,
             this.Marca,
             this.Rubro,
-            this.Descripcion,
-            this.PorcentajeIva,
             this.Costo,
-            this.MargendeGanancia,
-            this.NetoGravado,
-            this.CostoConIva,
-            this.PreciodeVenta,
-            this.descripcionDataGridViewTextBoxColumn});
+            this.PreciodeVenta});
             this.lista.DataSource = this.bsProducto;
             this.lista.Location = new System.Drawing.Point(0, 40);
             this.lista.Name = "lista";
@@ -164,13 +155,19 @@ namespace LATIENDA.Presentacion.Vistas
             // 
             // bsProducto
             // 
-            this.bsProducto.DataSource = typeof(LATIENDA.Dominio.Producto);
+            this.bsProducto.DataSource = typeof(LATIENDA.Dominio.Entidades.Producto);
             // 
-            // codigoDataGridViewTextBoxColumn
+            // Codigo
             // 
-            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            this.Codigo.DataPropertyName = "Codigo";
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
             // 
             // Marca
             // 
@@ -184,53 +181,17 @@ namespace LATIENDA.Presentacion.Vistas
             this.Rubro.HeaderText = "Rubro";
             this.Rubro.Name = "Rubro";
             // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            // 
-            // PorcentajeIva
-            // 
-            this.PorcentajeIva.DataPropertyName = "PorcentajeIva";
-            this.PorcentajeIva.HeaderText = "PorcentajeIva";
-            this.PorcentajeIva.Name = "PorcentajeIva";
-            // 
             // Costo
             // 
             this.Costo.DataPropertyName = "Costo";
             this.Costo.HeaderText = "Costo";
             this.Costo.Name = "Costo";
             // 
-            // MargendeGanancia
-            // 
-            this.MargendeGanancia.DataPropertyName = "MargendeGanancia";
-            this.MargendeGanancia.HeaderText = "MargendeGanancia";
-            this.MargendeGanancia.Name = "MargendeGanancia";
-            // 
-            // NetoGravado
-            // 
-            this.NetoGravado.DataPropertyName = "NetoGravado";
-            this.NetoGravado.HeaderText = "NetoGravado";
-            this.NetoGravado.Name = "NetoGravado";
-            // 
-            // CostoConIva
-            // 
-            this.CostoConIva.DataPropertyName = "CostoConIva";
-            this.CostoConIva.HeaderText = "CostoConIva";
-            this.CostoConIva.Name = "CostoConIva";
-            // 
             // PreciodeVenta
             // 
             this.PreciodeVenta.DataPropertyName = "PreciodeVenta";
             this.PreciodeVenta.HeaderText = "PreciodeVenta";
             this.PreciodeVenta.Name = "PreciodeVenta";
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             // 
             // ListarProductosVista
             // 
@@ -266,16 +227,11 @@ namespace LATIENDA.Presentacion.Vistas
         private System.Windows.Forms.DataGridView lista;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioIVADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn existenciaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rubro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PorcentajeIva;
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MargendeGanancia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NetoGravado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CostoConIva;
         private System.Windows.Forms.DataGridViewTextBoxColumn PreciodeVenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
     }
 }

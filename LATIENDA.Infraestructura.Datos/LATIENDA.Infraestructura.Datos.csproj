@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Memoria\Inventario.cs" />
-    <Compile Include="Migrations\202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados.cs" />
-    <Compile Include="Migrations\202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados.designer.cs">
-      <DependentUpon>202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados.cs</DependentUpon>
+    <Compile Include="Migrations\202201132330213_Nuevas_Entidades_2022.cs" />
+    <Compile Include="Migrations\202201132330213_Nuevas_Entidades_2022.designer.cs">
+      <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductoContext.cs" />
@@ -76,8 +76,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados.resx">
-      <DependentUpon>202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202201132330213_Nuevas_Entidades_2022.resx">
+      <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

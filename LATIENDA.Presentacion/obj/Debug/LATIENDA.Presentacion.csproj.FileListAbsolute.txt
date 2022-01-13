@@ -32,3 +32,37 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuale
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.pdb
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.AgregarStockVista.resources
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.RegistrarVentaVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.AgregarProductoVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.AgregarStockVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.AutenticarUsuario.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.PrincipalVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Properties.Resources.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.ListarProductosVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.ModificarProductoVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.RegistrarVentaVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.VistaBase.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Presentacion.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Presentacion.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Presentacion.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Datos.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Unity.Abstractions.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Unity.Container.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Datos.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Datos.dll.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Unity.Abstractions.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Unity.Container.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.csproj.CopyComplete

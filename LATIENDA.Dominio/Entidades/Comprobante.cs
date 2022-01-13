@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class Comprobante
     {
         #region Atributos 
+        public int ID { get; set; }
         private int _numerocomprobante;
         private TipodeComprobante _tipodeComprobante;
         private Venta _venta;

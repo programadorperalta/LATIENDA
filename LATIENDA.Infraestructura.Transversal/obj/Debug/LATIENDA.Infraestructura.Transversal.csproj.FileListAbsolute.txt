@@ -7,3 +7,12 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuale
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.csproj.CopyComplete
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.dll
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Programacion de Aplicaciones Visuales\LATIENDA\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\bin\Debug\LATIENDA.Infraestructura.Transversal.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\bin\Debug\LATIENDA.Infraestructura.Transversal.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\bin\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\bin\Debug\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.csproj.CopyComplete
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Infraestructura.Transversal\obj\Debug\LATIENDA.Infraestructura.Transversal.pdb

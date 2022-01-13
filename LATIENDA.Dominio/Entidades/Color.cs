@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class Color
     {
         #region Atributos 
+        public int ID { get; set; }
         private int _numerocolor;
         private string _descripcion;
         #endregion

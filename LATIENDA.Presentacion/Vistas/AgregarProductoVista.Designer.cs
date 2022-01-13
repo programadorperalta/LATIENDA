@@ -57,6 +57,7 @@ namespace LATIENDA.Presentacion.Vistas
             this.bsMarca = new System.Windows.Forms.BindingSource(this.components);
             this.cbRubro = new System.Windows.Forms.ComboBox();
             this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRubro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMarca)).BeginInit();
@@ -375,12 +376,24 @@ namespace LATIENDA.Presentacion.Vistas
             this.cbMarca.TabIndex = 22;
             this.cbMarca.ValueMember = "Numero";
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Location = new System.Drawing.Point(297, 308);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 32);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // AgregarProductoVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(489, 360);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.cbRubro);
             this.Controls.Add(this.label4);
@@ -445,5 +458,6 @@ namespace LATIENDA.Presentacion.Vistas
         private System.Windows.Forms.BindingSource bsRubro;
         private System.Windows.Forms.ComboBox cbRubro;
         private System.Windows.Forms.ComboBox cbMarca;
+        private System.Windows.Forms.Button button1;
     }
 }

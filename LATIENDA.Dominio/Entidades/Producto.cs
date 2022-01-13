@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class Producto
     {
         #region Atributos
+        public int ID { get; set; }
         private int _codigo;
         private string _descripcion;
         private double _costo;
@@ -17,73 +18,32 @@ namespace LATIENDA.Dominio.Entidades
         private double _porcentajeiva;
         private double _costoconiva; //este esta afectado por el porcentaje de IVA. 
         private double _preciodeventa;
-        private Rubro _rubro;
         private Marca _marca;
+        private Rubro _rubro;
+        private TipodeTalle _tipodeTalle;
         #endregion
 
-        #region Constructores
         public Producto()
         {
 
         }
 
-        public Producto(int codigo, string descripcion, double costo, double margendeganancia, double porcentajeiva, Rubro rubro, Marca marca)
-        {
-            Codigo = codigo;
-            Descripcion = descripcion;
-            Costo = costo;
-            MargendeGanancia = margendeganancia;
-            Rubro = rubro;
-            Marca = marca;
-
-        }
-
-
-        public Producto(int codigo,string descripcion,double costo,double margendeganancia,
-            double netogravado,double porcentajeiva,double costoconiva,
-            double preciodeventa,Rubro rubro,Marca marca)
-        {
-            Codigo = codigo;
-            Descripcion = descripcion;
-            Costo = costo;
-            MargendeGanancia = margendeganancia;
-
-
-        }
-
-
         public Producto(Producto aCopiar)
         {
             Codigo = aCopiar.Codigo;
-            Descripcion = aCopiar.Descripcion;
-            PorcentajeIva = aCopiar.PorcentajeIva;
-            Costo = aCopiar.Costo;
+            Descripcion = aCopiar.Descripcion ;
+            Costo = aCopiar.Costo ;
             MargendeGanancia = aCopiar.MargendeGanancia;
             NetoGravado = aCopiar.NetoGravado;
+            PorcentajeIva = aCopiar.PorcentajeIva;
             CostoConIva = aCopiar.CostoConIva;
             PreciodeVenta = aCopiar.PreciodeVenta;
             Marca = aCopiar.Marca;
             Rubro = aCopiar.Rubro;
+            TipodeTalle = aCopiar.TipodeTalle;
         }
-        #endregion
-
-
 
         #region Propiedades
-
-        public int MarcaID { get; set; }
-        public int RubroID { get; set; }
-
-        public virtual Marca Marca
-        {
-            get { return _marca; }
-            set { _marca = value; }
-        }
-        public virtual Rubro Rubro
-        {
-            get { return _rubro; }
-            set { _rubro = value; }
-        }
         public int Codigo { get { return _codigo; } set { _codigo = value; } }
         public string Descripcion { get { return _descripcion; } set { _descripcion = value; } }
         /*Todos los productos tienen IVA del 21%. Este valor podria modificarse*/
@@ -91,7 +51,9 @@ namespace LATIENDA.Dominio.Entidades
         /*Al ingresar la mercaderia se indica el costo (lo que se paga al proveedor) del producto.
          Este valor es siempre sin el IVA incluido. 
          */
-
+        public TipodeTalle TipodeTalle { get { return _tipodeTalle; } set { _tipodeTalle = value; } }
+        public Marca Marca { get { return _marca; } set { _marca = value; } }
+        public Rubro Rubro { get { return _rubro;  } set { _rubro = value; } }
         public double Costo { get { return _costo; } set { _costo = value; } }
 
         /*Los precios de venta de los productos se definen a partir del COSTO, EL MARGEN DE GANANCIA
@@ -100,18 +62,18 @@ namespace LATIENDA.Dominio.Entidades
          * Costoconiva = Neto Gravado * Porcentaje de IVA. 
          * Precio de venta = Neto Gravado + CostoconIva. 
          */
-        
-        public double MargendeGanancia { get { return _margendeganancia; } set { _margendeganancia = value; } }
-        public double NetoGravado { get { return Costo + Costo * MargendeGanancia; } set { _netogravado = value; } }
-        public double CostoConIva { get { return _costoconiva = NetoGravado * PorcentajeIva; } set { _costoconiva = value; } }
-        public double PreciodeVenta { get { return _preciodeventa = NetoGravado + CostoConIva; } set { _preciodeventa = value; } }
 
+        public double MargendeGanancia { get { return _margendeganancia; } set { _margendeganancia = value; } }
+        public double NetoGravado { get { return _netogravado = _costo + _costo * _margendeganancia; } set { _netogravado = value; } }
+        public double CostoConIva { get { return _costoconiva = _netogravado * _porcentajeiva; } set { _costoconiva = value; } }
+        public double PreciodeVenta { get { return _preciodeventa = _netogravado + _costoconiva; } set { _preciodeventa = value; } }
 
         #endregion
 
 
-       
 
-       
+
+
+
     }
 }

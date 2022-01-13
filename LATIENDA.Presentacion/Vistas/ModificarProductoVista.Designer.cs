@@ -52,8 +52,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.estadoLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
+            this.bsProducto = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // existenciaLabel
@@ -74,9 +74,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.existenciaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.existenciaText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "Existencia", true));
             this.existenciaText.Location = new System.Drawing.Point(164, 223);
-            this.existenciaText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.existenciaText.Margin = new System.Windows.Forms.Padding(2);
             this.existenciaText.Name = "existenciaText";
             this.existenciaText.Size = new System.Drawing.Size(246, 20);
             this.existenciaText.TabIndex = 33;
@@ -85,7 +84,7 @@ namespace LATIENDA.Presentacion.Vistas
             // 
             this.confirmarBoton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.confirmarBoton.Location = new System.Drawing.Point(391, 304);
-            this.confirmarBoton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.confirmarBoton.Margin = new System.Windows.Forms.Padding(2);
             this.confirmarBoton.Name = "confirmarBoton";
             this.confirmarBoton.Size = new System.Drawing.Size(73, 32);
             this.confirmarBoton.TabIndex = 26;
@@ -176,9 +175,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.precioFinalText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioFinalText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "PrecioFinal", true));
             this.precioFinalText.Location = new System.Drawing.Point(164, 199);
-            this.precioFinalText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.precioFinalText.Margin = new System.Windows.Forms.Padding(2);
             this.precioFinalText.Name = "precioFinalText";
             this.precioFinalText.Size = new System.Drawing.Size(246, 20);
             this.precioFinalText.TabIndex = 25;
@@ -188,9 +186,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.gananciaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gananciaText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "MargenGanancia", true));
             this.gananciaText.Location = new System.Drawing.Point(164, 177);
-            this.gananciaText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gananciaText.Margin = new System.Windows.Forms.Padding(2);
             this.gananciaText.Name = "gananciaText";
             this.gananciaText.Size = new System.Drawing.Size(246, 20);
             this.gananciaText.TabIndex = 24;
@@ -200,9 +197,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.precioIVAText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioIVAText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "PrecioIVA", true));
             this.precioIVAText.Location = new System.Drawing.Point(164, 154);
-            this.precioIVAText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.precioIVAText.Margin = new System.Windows.Forms.Padding(2);
             this.precioIVAText.Name = "precioIVAText";
             this.precioIVAText.Size = new System.Drawing.Size(246, 20);
             this.precioIVAText.TabIndex = 23;
@@ -212,9 +208,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.ivaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ivaText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "PorcentajeIVA", true));
             this.ivaText.Location = new System.Drawing.Point(164, 131);
-            this.ivaText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ivaText.Margin = new System.Windows.Forms.Padding(2);
             this.ivaText.Name = "ivaText";
             this.ivaText.Size = new System.Drawing.Size(246, 20);
             this.ivaText.TabIndex = 22;
@@ -224,9 +219,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.precioBaseText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioBaseText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "PrecioBase", true));
             this.precioBaseText.Location = new System.Drawing.Point(164, 107);
-            this.precioBaseText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.precioBaseText.Margin = new System.Windows.Forms.Padding(2);
             this.precioBaseText.Name = "precioBaseText";
             this.precioBaseText.Size = new System.Drawing.Size(246, 20);
             this.precioBaseText.TabIndex = 21;
@@ -236,9 +230,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.descripcionText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.descripcionText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "Descripcion", true));
             this.descripcionText.Location = new System.Drawing.Point(164, 85);
-            this.descripcionText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.descripcionText.Margin = new System.Windows.Forms.Padding(2);
             this.descripcionText.Name = "descripcionText";
             this.descripcionText.Size = new System.Drawing.Size(246, 20);
             this.descripcionText.TabIndex = 19;
@@ -248,9 +241,8 @@ namespace LATIENDA.Presentacion.Vistas
             this.codigoText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.codigoText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "Codigo", true));
             this.codigoText.Location = new System.Drawing.Point(164, 61);
-            this.codigoText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.codigoText.Margin = new System.Windows.Forms.Padding(2);
             this.codigoText.Name = "codigoText";
             this.codigoText.Size = new System.Drawing.Size(246, 20);
             this.codigoText.TabIndex = 18;
@@ -285,10 +277,9 @@ namespace LATIENDA.Presentacion.Vistas
             this.estadoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.estadoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.bindingSource, "Estado", true));
             this.estadoComboBox.FormattingEnabled = true;
             this.estadoComboBox.Location = new System.Drawing.Point(164, 247);
-            this.estadoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.estadoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.estadoComboBox.Name = "estadoComboBox";
             this.estadoComboBox.Size = new System.Drawing.Size(246, 21);
             this.estadoComboBox.TabIndex = 35;
@@ -328,15 +319,15 @@ namespace LATIENDA.Presentacion.Vistas
             this.label2.TabIndex = 38;
             this.label2.Text = "%";
             // 
-            // bindingSource
+            // bsProducto
             // 
-            this.bindingSource.DataSource = typeof(LATIENDA.Dominio.Producto);
+            this.bsProducto.DataSource = typeof(LATIENDA.Dominio.Entidades.Producto);
             // 
             // ModificarProductoVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(489, 360);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -360,10 +351,10 @@ namespace LATIENDA.Presentacion.Vistas
             this.Controls.Add(this.codigoText);
             this.Controls.Add(this.codigoLabel);
             this.Controls.Add(this.tituloLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificarProductoVista";
             this.Text = "ModificarVista";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,8 +382,8 @@ namespace LATIENDA.Presentacion.Vistas
         private System.Windows.Forms.Label tituloLabel;
         private System.Windows.Forms.ComboBox estadoComboBox;
         private System.Windows.Forms.Label estadoLabel;
-        private System.Windows.Forms.BindingSource bindingSource;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.BindingSource bsProducto;
     }
 }

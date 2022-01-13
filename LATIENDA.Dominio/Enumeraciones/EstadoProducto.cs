@@ -8,6 +8,6 @@ namespace LATIENDA.Dominio
 {
     public enum EstadoProducto
     {
-        ACTIVO = 0, INACTIVO, ELIMINADO
+        ACTIVO = 0, INACTIVO = 1 , ELIMINADO = 2 
     }
 }

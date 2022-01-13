@@ -28,30 +28,46 @@ namespace LATIENDA.Infraestructura.Datos
             modelBuilder
                 .Entity<Producto>()
                 .ToTable("Productos")
-                .HasKey(p => p.Codigo);
+                .HasKey(p => p.ID);
+
+            modelBuilder
+                .Entity<Venta>()
+                .ToTable("Ventas")
+                .HasKey(v => v.ID);
+
+
+            modelBuilder
+                .Entity<Talle>()
+                .ToTable("Talles")
+                .HasKey(p => p.ID);
+
+            modelBuilder
+                .Entity<Color>()
+                .ToTable("Colores")
+                .HasKey(p => p.ID);
 
             modelBuilder
                 .Entity<Marca>()
                 .ToTable("Marcas")
-                .HasKey(m => m.Numero);
+                .HasKey(m => m.ID);
 
             modelBuilder
                 .Entity<Rubro>()
                 .ToTable("Rubros")
-                .HasKey(r => r.Numero);
+                .HasKey(r => r.ID);
 
             modelBuilder
                 .Entity<Empleado>()
                 .ToTable("Empleados")
-                .HasKey(e => e.EmpleadoID);
+                .HasKey(e => e.ID);
 
             modelBuilder
                 .Entity<Usuario>()
-                .ToTable("Usuarios").HasKey(u => u.UserID);
+                .ToTable("Usuarios").HasKey(u => u.ID);
 
             modelBuilder
                 .Entity<Stock>()
-                .ToTable("Stocks");
+                .ToTable("Stocks").HasKey(s => s.ID);
 
         }
 
@@ -62,6 +78,7 @@ namespace LATIENDA.Infraestructura.Datos
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Color> Colores { get; set; }
         public DbSet<Talle> Talles { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
 
     }
 }

@@ -8,7 +8,8 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class Cliente
     {
-        #region Atributos 
+        #region Atributos
+        public int ID { get; set; }
         private long _cuit;
         private CondicionTributaria _condiciontributaria;
         private string _nombre;
@@ -36,7 +37,6 @@ namespace LATIENDA.Dominio.Entidades
         public CondicionTributaria CondicionTributaria { get { return _condiciontributaria; } set { _condiciontributaria = value; } }
         public long Cuit { get { return _cuit; } set { _cuit = value; } }
         public string Nombre { get { return _nombre; } set { _nombre= value; } }
-
         public string Domicilio { get { return _domicilio; } set { _domicilio = value; } }
         #endregion
 

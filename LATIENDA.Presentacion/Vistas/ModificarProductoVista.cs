@@ -31,7 +31,7 @@ namespace LATIENDA.Presentacion.Vistas
 
         public void RecibirProducto(Producto producto)
         {
-            bindingSource.DataSource = producto;
+            bsProducto.DataSource = producto;
         }
 
         private bool ControlarCamposVacios()

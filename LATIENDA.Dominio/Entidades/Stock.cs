@@ -9,8 +9,8 @@ namespace LATIENDA.Dominio.Entidades
     public class Stock
     {
         #region Atributos 
+        public int ID { get; set; }
         private int _cantidad;
-        private Producto _producto;
         private Color _color;
         private Talle _talle;
         #endregion
@@ -21,10 +21,9 @@ namespace LATIENDA.Dominio.Entidades
 
         }
 
-        public Stock(int cantidad,Producto producto,Color color, Talle talle)
+        public Stock(int cantidad,Color color, Talle talle)
         {
             Cantidad = cantidad;
-            Producto = producto;
             Color = color;
             Talle = talle;
         }
@@ -33,7 +32,6 @@ namespace LATIENDA.Dominio.Entidades
 
         #region Propiedades
         public int Cantidad { get { return _cantidad; } set { _cantidad = value; } }
-        public Producto Producto { get { return _producto; } set { _producto = value; } }
         public Color Color { get { return _color; } set { _color = value; } }
         public Talle Talle { get { return _talle; } set { _talle = value; } }
         #endregion

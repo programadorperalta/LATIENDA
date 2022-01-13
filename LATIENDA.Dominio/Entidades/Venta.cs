@@ -8,59 +8,53 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class Venta
     {
-        #region Atributos
-        private int _numeroventa;
-        private double _montoventa;
-        private DateTime _fecha;
-        private Comprobante _comprobante; //preguntar
-        private Usuario _usuario;
-        private List<Producto> _productos;
+        #region Atributos 
+        public int ID { get; set; }
+        private int _numero;
         private Cliente _cliente;
-        private LineadeVenta _lineadeventa;
-        private int _cantidad;
+        private DateTime _fechayhora;
+        private Usuario _usuario; //del sistema 
+        private List<Producto> _productos;
+        private LineadeVenta _lineadeVenta;
+
         #endregion
 
-
-
-        #region Constructores
-        public Venta()
+        public Venta(int numero, Cliente cliente, Usuario user, List<Producto> productos)
         {
-
-        }
-
-        public Venta(int numero, double monto, Usuario usuario,List<Producto> productos,Cliente cliente,int cantidad,LineadeVenta lineadeVenta)
-        {
-            _productos = new List<Producto>();
-            _productos = productos;
-
-            Numeroventa = numero;
-            Monto = monto;
-            Usuario = usuario;
+            FechayHora = DateTime.Now;
+            Numero = numero;
             Cliente = cliente;
-            Cantidad = cantidad;
-            LineadeVenta = lineadeVenta;
-
+            User = user;
+            Productos = productos;
         }
-        #endregion
 
-        #region Propiedades
-        public LineadeVenta LineadeVenta { get { return _lineadeventa; } set { _lineadeventa = value; } }
-        public int Cantidad { get { return _cantidad; } set { _cantidad = value; } }
-        public Cliente Cliente { get { return _cliente; } set { _cliente = value; } }
-        public int Numeroventa { get { return _numeroventa; } set { _numeroventa = value; } }
-        public double Monto { get { return _montoventa; } set { _montoventa = value; } }
-        public DateTime Fecha { get { return _fecha; } set { _fecha = value; } }
-        public Comprobante Comprobante { get { return _comprobante; } set { _comprobante = value; } }
-        public Usuario Usuario { get { return _usuario; } set { _usuario = value; } }
-        public List<Producto> Productos { get { return _productos; } set { _productos = value; } }
 
-        public void AgregarProductos(Producto producto)
+        #region Propiedades 
+        public DateTime FechayHora { get { return _fechayhora; } set { _fechayhora = value; } }
+        public LineadeVenta LDV { get { return _lineadeVenta; } set { _lineadeVenta = value; } }
+        public int Numero
         {
-            _productos.Add(producto);
+            get { return _numero; }
+            set { _numero = value; }
         }
 
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { _cliente = value; }
+        }
 
+        public Usuario User
+        {
+            get { return _usuario; }
+            set { _usuario = value; }
+        }
 
+        public List<Producto> Productos
+        {
+            get { return _productos; }
+            set { _productos = value; }
+        }
         #endregion
     }
 }

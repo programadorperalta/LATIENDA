@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Tests", "04. Tests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTiendaTests", "LaTiendaTests\LaTiendaTests.csproj", "{A0AFBC87-1349-43BB-A130-1EFBA7863F45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATIENDA.Infraestructura.Cliente.AccesoExterno", "LATIENDA.Infraestructura.Cliente.AccesoExterno\LATIENDA.Infraestructura.Cliente.AccesoExterno.csproj", "{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{A0AFBC87-1349-43BB-A130-1EFBA7863F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0AFBC87-1349-43BB-A130-1EFBA7863F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0AFBC87-1349-43BB-A130-1EFBA7863F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{3929E067-B99D-4701-A815-9290B8497DED} = {036B4E60-BE67-4265-B993-11CD5BF17101}
 		{7AD58820-75A5-4049-8B6C-2B1E57697C13} = {036B4E60-BE67-4265-B993-11CD5BF17101}
 		{A0AFBC87-1349-43BB-A130-1EFBA7863F45} = {2FEB3FBA-F935-4EEF-B1CE-7849FFC5BF21}
+		{8D90D6A2-91C3-4847-A3E1-A2A938EBE80E} = {036B4E60-BE67-4265-B993-11CD5BF17101}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB3BA0DE-F28F-4882-B020-A0CABD7F61E3}

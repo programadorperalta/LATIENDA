@@ -9,6 +9,7 @@ namespace LATIENDA.Dominio.Entidades
     public class LineadeVenta
     {
         #region Atributos 
+        public int ID { get; set; }
         private int _numero;
         private Producto _producto;
         private int _cantidad;

@@ -7,13 +7,13 @@ namespace LATIENDA.Infraestructura.Datos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados : IMigrationMetadata
+    public sealed partial class Nuevas_Entidades_2022 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Nuevas_Entidades_2022));
         
         string IMigrationMetadata.Id
         {
-            get { return "202108311907526_NuevasEntidades_Productos_Marcas_Rubros_Usuarios_Empleados"; }
+            get { return "202201132330213_Nuevas_Entidades_2022"; }
         }
         
         string IMigrationMetadata.Source
