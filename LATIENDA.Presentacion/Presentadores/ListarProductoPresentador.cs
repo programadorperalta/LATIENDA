@@ -47,6 +47,8 @@ namespace LATIENDA.Presentacion.Presentadores
             ActualizarInventario();
         }
 
+        
+
         public void EliminarProducto(int codigo)
         {
             if (Vista.ConfirmarEliminacion())

@@ -13,6 +13,7 @@ namespace LATIENDA.Dominio.Entidades
         private int _cantidad;
         private Color _color;
         private Talle _talle;
+        public virtual Producto Producto { get; set; }
         #endregion
 
         #region Constructores
@@ -35,6 +36,9 @@ namespace LATIENDA.Dominio.Entidades
         public Color Color { get { return _color; } set { _color = value; } }
         public Talle Talle { get { return _talle; } set { _talle = value; } }
         #endregion
+
+        
+
 
     }
 }

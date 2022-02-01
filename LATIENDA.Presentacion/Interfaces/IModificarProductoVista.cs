@@ -12,5 +12,8 @@ namespace LATIENDA.Presentacion.Interfaces
     {
         void RecibirProducto(Producto producto);
         void MostrarMensaje(string descripcion, Mensaje tipo);
+        void MostrarRubros(List<Rubro> rubros);
+        void MostrarMarcas(List<Marca> marcas);
+        void MostrarTiposdeTalles(List<TipodeTalle> tiposdetalles);
     }
 }

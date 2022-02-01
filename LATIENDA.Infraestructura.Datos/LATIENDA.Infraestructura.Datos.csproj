@@ -57,6 +57,46 @@
     <Compile Include="Migrations\202201132330213_Nuevas_Entidades_2022.designer.cs">
       <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.cs" />
+    <Compile Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.designer.cs">
+      <DependentUpon>202201311504186_Se modifico la clase Empleado otra vez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201311555157_Se modifico la clase Usuario.cs" />
+    <Compile Include="Migrations\202201311555157_Se modifico la clase Usuario.designer.cs">
+      <DependentUpon>202201311555157_Se modifico la clase Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs" />
+    <Compile Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.designer.cs">
+      <DependentUpon>202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201311635536_Se modifico la clase Producto.cs" />
+    <Compile Include="Migrations\202201311635536_Se modifico la clase Producto.designer.cs">
+      <DependentUpon>202201311635536_Se modifico la clase Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201311736591_New Migration.cs" />
+    <Compile Include="Migrations\202201311736591_New Migration.designer.cs">
+      <DependentUpon>202201311736591_New Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201312035563_Se modifico la clase Stock.cs" />
+    <Compile Include="Migrations\202201312035563_Se modifico la clase Stock.designer.cs">
+      <DependentUpon>202201312035563_Se modifico la clase Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202011604162_Se modifico la clase TALLE.cs" />
+    <Compile Include="Migrations\202202011604162_Se modifico la clase TALLE.designer.cs">
+      <DependentUpon>202202011604162_Se modifico la clase TALLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202012320181_Se modifico la clase Cliente.cs" />
+    <Compile Include="Migrations\202202012320181_Se modifico la clase Cliente.designer.cs">
+      <DependentUpon>202202012320181_Se modifico la clase Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs" />
+    <Compile Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.designer.cs">
+      <DependentUpon>202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs" />
+    <Compile Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.designer.cs">
+      <DependentUpon>202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +118,36 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202201132330213_Nuevas_Entidades_2022.resx">
       <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.resx">
+      <DependentUpon>202201311504186_Se modifico la clase Empleado otra vez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201311555157_Se modifico la clase Usuario.resx">
+      <DependentUpon>202201311555157_Se modifico la clase Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.resx">
+      <DependentUpon>202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201311635536_Se modifico la clase Producto.resx">
+      <DependentUpon>202201311635536_Se modifico la clase Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201311736591_New Migration.resx">
+      <DependentUpon>202201311736591_New Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201312035563_Se modifico la clase Stock.resx">
+      <DependentUpon>202201312035563_Se modifico la clase Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202011604162_Se modifico la clase TALLE.resx">
+      <DependentUpon>202202011604162_Se modifico la clase TALLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202012320181_Se modifico la clase Cliente.resx">
+      <DependentUpon>202202012320181_Se modifico la clase Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.resx">
+      <DependentUpon>202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.resx">
+      <DependentUpon>202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

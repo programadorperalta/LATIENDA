@@ -18,9 +18,9 @@ namespace LATIENDA.Dominio.Entidades
         private double _porcentajeiva;
         private double _costoconiva; //este esta afectado por el porcentaje de IVA. 
         private double _preciodeventa;
-        private Marca _marca;
-        private Rubro _rubro;
-        private TipodeTalle _tipodeTalle;
+        public virtual Marca Marca { get; set; }
+        public virtual Rubro Rubro { get; set; }
+        public virtual TipodeTalle TipodeTalle { get; set; }
         #endregion
 
         public Producto()
@@ -30,8 +30,9 @@ namespace LATIENDA.Dominio.Entidades
 
         public Producto(Producto aCopiar)
         {
+            ID = aCopiar.ID;
             Codigo = aCopiar.Codigo;
-            Descripcion = aCopiar.Descripcion ;
+            Descripcion = aCopiar.Descripcion;
             Costo = aCopiar.Costo ;
             MargendeGanancia = aCopiar.MargendeGanancia;
             NetoGravado = aCopiar.NetoGravado;
@@ -44,16 +45,21 @@ namespace LATIENDA.Dominio.Entidades
         }
 
         #region Propiedades
-        public int Codigo { get { return _codigo; } set { _codigo = value; } }
+        public int Codigo { 
+            
+            get {
+                return _codigo ; 
+            } set { 
+                _codigo = value; 
+
+            } 
+        }
         public string Descripcion { get { return _descripcion; } set { _descripcion = value; } }
         /*Todos los productos tienen IVA del 21%. Este valor podria modificarse*/
         public double PorcentajeIva { get { return _porcentajeiva = 0.21; } set { _porcentajeiva = value; } }
         /*Al ingresar la mercaderia se indica el costo (lo que se paga al proveedor) del producto.
          Este valor es siempre sin el IVA incluido. 
          */
-        public TipodeTalle TipodeTalle { get { return _tipodeTalle; } set { _tipodeTalle = value; } }
-        public Marca Marca { get { return _marca; } set { _marca = value; } }
-        public Rubro Rubro { get { return _rubro;  } set { _rubro = value; } }
         public double Costo { get { return _costo; } set { _costo = value; } }
 
         /*Los precios de venta de los productos se definen a partir del COSTO, EL MARGEN DE GANANCIA

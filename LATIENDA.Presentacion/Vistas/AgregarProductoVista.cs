@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using LATIENDA.Dominio;
 using LATIENDA.Dominio.Entidades;
 using LATIENDA.Infraestructura.Datos;
+using Color = LATIENDA.Dominio.Entidades.Color;
 
 namespace LATIENDA.Presentacion.Vistas
 {
@@ -22,8 +23,7 @@ namespace LATIENDA.Presentacion.Vistas
         public AgregarProductoVista()
         {
             InitializeComponent();
-            precioIVAText.Enabled = false;
-            
+
         }
 
         public void MostrarRubros(List<Rubro> rubros)
@@ -36,11 +36,25 @@ namespace LATIENDA.Presentacion.Vistas
             bsMarca.DataSource = marcas;
         }
 
+        public void MostrarTiposdeTalles(List<TipodeTalle> tiposdetalles)
+        {
+            bsTipodeTalle.DataSource = tiposdetalles;
+        }
+
         private void confirmarBoton_Click(object sender, EventArgs e)
         {
             if (!ControlarCamposVacios())
             {
-                Presentador.AgregarProductos();
+                Producto prodAux = new Producto()
+                {
+                    Marca = cbMarca.SelectedItem as Marca,
+                    Rubro = cbRubro.SelectedItem as Rubro,
+                    TipodeTalle = cbTipodeTalle.SelectedItem as TipodeTalle
+                    
+                };
+
+                Presentador.AgregarProductos(prodAux);
+              
             }
             else 
             {
@@ -54,6 +68,7 @@ namespace LATIENDA.Presentacion.Vistas
             
         }
 
+
         public void MostrarMensaje(string descripcion, Mensaje tipo)
         {
             MessageBox.Show(descripcion, tipo.ToString(), MessageBoxButtons.OK);
@@ -62,12 +77,12 @@ namespace LATIENDA.Presentacion.Vistas
         private bool ControlarCamposVacios()
         {
             return  string.IsNullOrEmpty(codigoText.Text) || 
-                    string.IsNullOrEmpty(descripcionText.Text) ||
-                    string.IsNullOrEmpty(precioBaseText.Text) ||
+                    string.IsNullOrEmpty(txtDescripcion.Text) ||
+                    string.IsNullOrEmpty(costoText.Text) ||
                     string.IsNullOrEmpty(ivaText.Text) || 
-                    string.IsNullOrEmpty(precioFinalText.Text) || 
-                    string.IsNullOrEmpty(gananciaText.Text) || 
-                    string.IsNullOrEmpty(existenciaText.Text);
+                    string.IsNullOrEmpty(costoIVAText.Text) || 
+                    string.IsNullOrEmpty(netoGravadoText.Text) || 
+                    string.IsNullOrEmpty(preciodeVentaText.Text);
         }
 
 
@@ -99,6 +114,52 @@ namespace LATIENDA.Presentacion.Vistas
         private void cbRubro_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void precioFinalLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void codigoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (!ControlarCamposVacios())
+            {
+                Producto prodAux = new Producto()
+                {
+                    Marca = cbMarca.SelectedItem as Marca,
+                    Rubro = cbRubro.SelectedItem as Rubro,
+                    TipodeTalle = cbTipodeTalle.SelectedItem as TipodeTalle
+
+                };
+
+                Presentador.AgregarProductos(prodAux);
+
+            }
+            else
+            {
+                MostrarMensaje("Campos vacios.", Mensaje.ADVERTENCIA);
+            }
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
     public class AgregarProductoVistaConPresentador : VistaBase<AgregarProductoPresentador> { }

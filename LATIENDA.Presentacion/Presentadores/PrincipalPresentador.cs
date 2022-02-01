@@ -38,5 +38,11 @@ namespace LATIENDA.Presentacion.Presentadores
             AdministradorDeTareas.Instance.Iniciar<ProductoTarea>(Vista);
             
         }
+
+        public void IniciarStock()
+        {
+            AdministradorDeTareas.Instance.Iniciar<StockTarea>(Vista);
+        }
+
     }
 }

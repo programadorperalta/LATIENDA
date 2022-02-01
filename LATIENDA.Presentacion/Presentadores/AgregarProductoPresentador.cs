@@ -5,6 +5,7 @@ using LATIENDA.Dominio.Entidades;
 using LATIENDA.Infraestructura.Datos;
 using LATIENDA.Presentacion.Tareas;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
@@ -20,6 +21,8 @@ namespace LATIENDA.Presentacion.Presentadores
             CrearProductoSource();
             MostrarRubros();
             MostrarMarcas();
+            MostrarTiposdeTalles();
+           
         }
         
         public void CrearProductoSource()
@@ -27,6 +30,12 @@ namespace LATIENDA.Presentacion.Presentadores
             _productoSource = null;
             _productoSource = new Producto();
             Vista.RecibirProducto(_productoSource);
+            
+        }
+
+        public void MostrarTiposdeTalles()
+        {
+            Vista.MostrarTiposdeTalles(_repositorio.ObtenerListaDeTiposdeTalles());
         }
 
         public  void MostrarRubros()
@@ -39,11 +48,13 @@ namespace LATIENDA.Presentacion.Presentadores
             Vista.MostrarMarcas(_repositorio.ObtenerListaMarcas());
         }
 
-
-        public void AgregarProductos()
+        public void AgregarProductos(Producto producto)
         {
             try
             {
+                _productoSource.Marca = producto.Marca;
+                _productoSource.Rubro = producto.Rubro;
+                _productoSource.TipodeTalle = producto.TipodeTalle;
 
                 _repositorio.AgregarProducto(_productoSource);
                 Vista.MostrarMensaje("Producto agregado con exito.", Mensaje.EXITO);

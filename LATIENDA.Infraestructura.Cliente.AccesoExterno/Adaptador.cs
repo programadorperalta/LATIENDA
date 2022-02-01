@@ -42,7 +42,7 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
                 FEAuthRequest.ExtensionData = autorizacion.ExtensionData;
 
                 //FECAECABRequest
-                FECAECABRequest.CantReg = comprobante.Venta.Productos.Count();
+                //FECAECABRequest.CantReg = comprobante.Venta.Productos.Count();
                 FECAECABRequest.CbteTipo = comprobante.TipodeComprobante.GetHashCode();
                 FECAECABRequest.PtoVta = 16;
 

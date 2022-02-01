@@ -30,7 +30,26 @@ namespace LATIENDA.Presentacion.Presentadores
             IRepositorio repositorio) : base(vista)
         {
             _repositorio = repositorio;
+            MostrarRubros();
+            MostrarMarcas();
+            MostrarTiposdeTalles();
         }
+
+        public void MostrarTiposdeTalles()
+        {
+            Vista.MostrarTiposdeTalles(_repositorio.ObtenerListaDeTiposdeTalles());
+        }
+
+        public void MostrarRubros()
+        {
+            Vista.MostrarRubros(_repositorio.ObtenerListaRubros());
+        }
+
+        public void MostrarMarcas()
+        {
+            Vista.MostrarMarcas(_repositorio.ObtenerListaMarcas());
+        }
+
 
         private void EnviarProductoSource()
         {
@@ -38,13 +57,21 @@ namespace LATIENDA.Presentacion.Presentadores
             Vista.RecibirProducto(_productoSource);
         }
 
-        public void ModificarProducto()
+        public void ModificarProducto(Producto producto)
         {
             try
             {
+                _productoSource.Codigo = producto.Codigo;
+                _productoSource.Marca = producto.Marca;
+                _productoSource.Rubro = producto.Rubro;
+                _productoSource.TipodeTalle = producto.TipodeTalle;
+
                 _repositorio.ModificarProducto(Tarea.ProductoId, _productoSource);
                 Vista.MostrarMensaje("Producto modificado con exito.", Mensaje.EXITO);
+                
+                
             }
+            
             catch (FormatException formatoExcepcion)
             {
                 Vista.MostrarMensaje(formatoExcepcion.Message, Mensaje.ERROR);
@@ -53,6 +80,8 @@ namespace LATIENDA.Presentacion.Presentadores
             {
                 Vista.MostrarMensaje(existenciaException.Message, Mensaje.ERROR);
             }
+
+            
         }
     }
 }

@@ -29,7 +29,8 @@ namespace LATIENDA.Presentacion.Vistas
 
             bsProducto.ResetBindings(false);
             bsProducto.DataSource = inventario;
-
+            
+            
             //ActualizarBotonModificar();           
         }
 
@@ -59,7 +60,6 @@ namespace LATIENDA.Presentacion.Vistas
         private void AgregarButton_Click(object sender, EventArgs e)
         {
             Presentador.AgregarProducto();
-            //_presentador.NavegarA<AgregarProductoVista>(esDialogo: true);
             //_presentador.ActualizarInventario();
         }
 
@@ -68,7 +68,7 @@ namespace LATIENDA.Presentacion.Vistas
              
             if (lista.RowCount != 0)
             {
-                int codigoEliminar = (int)lista.Rows[lista.SelectedCells[0].RowIndex].Cells[0].Value;
+                int codigoEliminar = (int)lista.Rows[lista.SelectedCells[1].RowIndex].Cells[1].Value;
                 Presentador.EliminarProducto(codigoEliminar);
             }
             else {
@@ -80,8 +80,9 @@ namespace LATIENDA.Presentacion.Vistas
         {
             if (lista.RowCount != 0)
             {
-                int codigoModificar = (int)lista.Rows[lista.SelectedCells[0].RowIndex].Cells[0].Value;
+                int codigoModificar = (int)lista.Rows[lista.SelectedCells[1].RowIndex].Cells[1].Value;
                 Presentador.ModificarProducto(codigoModificar);
+                
             }
             else
                 {
@@ -92,6 +93,16 @@ namespace LATIENDA.Presentacion.Vistas
         private void BusquedaText_TextChanged(object sender, EventArgs e)
         {
             Presentador.FiltarInventario(BusquedaText.Text);
+        }
+
+        private void lista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
     public class ListarProductosVistaConPresentador: VistaBase<ListarProductoPresentador> { }

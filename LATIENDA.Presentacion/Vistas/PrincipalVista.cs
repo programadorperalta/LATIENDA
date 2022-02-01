@@ -17,18 +17,8 @@ namespace LATIENDA.Presentacion.Vistas
         public PrincipalVista()
         {
             InitializeComponent();
-            txtNombreUsuario.Enabled = false;
-            
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-
-
-
-        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Presentador.IniciarProductos();
-        }
-
-
 
         private void MostrarAdvertencia()
         {
@@ -39,10 +29,45 @@ namespace LATIENDA.Presentacion.Vistas
         {
             Dispose();
         }
-
+        
         public void MostrarUsuario(string nombre)
         {
             txtNombreUsuario.Text = $"Bienvenid@: {nombre}";
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Presentador.IniciarProductos();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Presentador.IniciarStock();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void iconButton2_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void iconButton3_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 

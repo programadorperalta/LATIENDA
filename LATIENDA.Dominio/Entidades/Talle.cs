@@ -11,7 +11,7 @@ namespace LATIENDA.Dominio.Entidades
         #region Atributos 
         public int ID { get; set; }
         private string _descripcion;
-        private TipodeTalle _tipodetalle;
+        public virtual TipodeTalle TipodeTalle { get; set; }
         #endregion
 
         public Talle()
@@ -27,7 +27,6 @@ namespace LATIENDA.Dominio.Entidades
 
 
         #region Propiedades 
-        public TipodeTalle TipodeTalle { get {return _tipodetalle; }set {_tipodetalle = value; } }
         public string Descripcion { get { return _descripcion; } set { _descripcion = value; } }
         #endregion
     }

@@ -10,7 +10,6 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos
         public int ID { get; set; }
-        private int _numero;
         private string _descripcion;
         #endregion
 
@@ -22,13 +21,11 @@ namespace LATIENDA.Dominio.Entidades
 
         public Rubro(int numero,string descripcion)
         {
-            Numero = numero;
             Descripcion = descripcion;
         }
 
         #region Propiedades 
         public string Descripcion { get { return _descripcion; } set { _descripcion = value; } }
-        public int Numero { get { return _numero; } set { _numero = value; } }
         #endregion
 
 

@@ -29,53 +29,74 @@ namespace LATIENDA.Presentacion.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.existenciaLabel = new System.Windows.Forms.Label();
-            this.existenciaText = new System.Windows.Forms.TextBox();
+            this.txtPreciodeVenta = new System.Windows.Forms.TextBox();
+            this.bsProducto = new System.Windows.Forms.BindingSource(this.components);
             this.precioFinalLabel = new System.Windows.Forms.Label();
             this.gananciaLabel = new System.Windows.Forms.Label();
             this.precioIVALabel = new System.Windows.Forms.Label();
             this.ivaLabel = new System.Windows.Forms.Label();
             this.baseLabel = new System.Windows.Forms.Label();
             this.descripcionLabel = new System.Windows.Forms.Label();
-            this.precioFinalText = new System.Windows.Forms.TextBox();
-            this.gananciaText = new System.Windows.Forms.TextBox();
-            this.precioIVAText = new System.Windows.Forms.TextBox();
-            this.ivaText = new System.Windows.Forms.TextBox();
-            this.precioBaseText = new System.Windows.Forms.TextBox();
-            this.descripcionText = new System.Windows.Forms.TextBox();
+            this.txtCostoIva = new System.Windows.Forms.TextBox();
+            this.txtNetoGravado = new System.Windows.Forms.TextBox();
+            this.txtMargendeganancia = new System.Windows.Forms.TextBox();
+            this.txtIva = new System.Windows.Forms.TextBox();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.codigoText = new System.Windows.Forms.TextBox();
             this.codigoLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtRubro = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbTalle = new System.Windows.Forms.ComboBox();
+            this.bsStock = new System.Windows.Forms.BindingSource(this.components);
+            this.bsTalle = new System.Windows.Forms.BindingSource(this.components);
+            this.cbColor = new System.Windows.Forms.ComboBox();
+            this.bsColor = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtRubro = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTipodeTalle = new System.Windows.Forms.TextBox();
+            this.lbTipodeTalle = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTalle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsColor)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(326, 56);
+            this.label1.Location = new System.Drawing.Point(203, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo del Producto";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(435, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtCodigo.BackColor = System.Drawing.SystemColors.Info;
+            this.txtCodigo.Location = new System.Drawing.Point(344, 45);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(200, 20);
+            this.txtCodigo.TabIndex = 2;
             // 
             // label3
             // 
@@ -115,23 +136,29 @@ namespace LATIENDA.Presentacion.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.existenciaLabel.AutoSize = true;
-            this.existenciaLabel.Location = new System.Drawing.Point(8, 355);
+            this.existenciaLabel.Location = new System.Drawing.Point(8, 362);
             this.existenciaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.existenciaLabel.Name = "existenciaLabel";
             this.existenciaLabel.Size = new System.Drawing.Size(86, 13);
             this.existenciaLabel.TabIndex = 34;
             this.existenciaLabel.Text = "Precio de Venta:";
             // 
-            // existenciaText
+            // txtPreciodeVenta
             // 
-            this.existenciaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtPreciodeVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.existenciaText.Location = new System.Drawing.Point(122, 355);
-            this.existenciaText.Margin = new System.Windows.Forms.Padding(2);
-            this.existenciaText.Name = "existenciaText";
-            this.existenciaText.Size = new System.Drawing.Size(259, 20);
-            this.existenciaText.TabIndex = 33;
+            this.txtPreciodeVenta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "PreciodeVenta", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtPreciodeVenta.Location = new System.Drawing.Point(122, 355);
+            this.txtPreciodeVenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPreciodeVenta.Name = "txtPreciodeVenta";
+            this.txtPreciodeVenta.ReadOnly = true;
+            this.txtPreciodeVenta.Size = new System.Drawing.Size(259, 20);
+            this.txtPreciodeVenta.TabIndex = 33;
+            // 
+            // bsProducto
+            // 
+            this.bsProducto.DataSource = typeof(LATIENDA.Dominio.Entidades.Producto);
             // 
             // precioFinalLabel
             // 
@@ -139,7 +166,7 @@ namespace LATIENDA.Presentacion.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.precioFinalLabel.AutoSize = true;
-            this.precioFinalLabel.Location = new System.Drawing.Point(8, 334);
+            this.precioFinalLabel.Location = new System.Drawing.Point(8, 338);
             this.precioFinalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.precioFinalLabel.Name = "precioFinalLabel";
             this.precioFinalLabel.Size = new System.Drawing.Size(78, 13);
@@ -152,7 +179,7 @@ namespace LATIENDA.Presentacion.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gananciaLabel.AutoSize = true;
-            this.gananciaLabel.Location = new System.Drawing.Point(8, 311);
+            this.gananciaLabel.Location = new System.Drawing.Point(8, 316);
             this.gananciaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gananciaLabel.Name = "gananciaLabel";
             this.gananciaLabel.Size = new System.Drawing.Size(77, 13);
@@ -165,7 +192,7 @@ namespace LATIENDA.Presentacion.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.precioIVALabel.AutoSize = true;
-            this.precioIVALabel.Location = new System.Drawing.Point(8, 289);
+            this.precioIVALabel.Location = new System.Drawing.Point(8, 293);
             this.precioIVALabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.precioIVALabel.Name = "precioIVALabel";
             this.precioIVALabel.Size = new System.Drawing.Size(110, 13);
@@ -211,80 +238,94 @@ namespace LATIENDA.Presentacion.Vistas
             this.descripcionLabel.TabIndex = 27;
             this.descripcionLabel.Text = "Descripcion:";
             // 
-            // precioFinalText
+            // txtCostoIva
             // 
-            this.precioFinalText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtCostoIva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioFinalText.Location = new System.Drawing.Point(122, 331);
-            this.precioFinalText.Margin = new System.Windows.Forms.Padding(2);
-            this.precioFinalText.Name = "precioFinalText";
-            this.precioFinalText.Size = new System.Drawing.Size(259, 20);
-            this.precioFinalText.TabIndex = 26;
+            this.txtCostoIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "CostoConIva", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtCostoIva.Location = new System.Drawing.Point(122, 331);
+            this.txtCostoIva.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCostoIva.Name = "txtCostoIva";
+            this.txtCostoIva.ReadOnly = true;
+            this.txtCostoIva.Size = new System.Drawing.Size(259, 20);
+            this.txtCostoIva.TabIndex = 26;
             // 
-            // gananciaText
+            // txtNetoGravado
             // 
-            this.gananciaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtNetoGravado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gananciaText.Location = new System.Drawing.Point(122, 309);
-            this.gananciaText.Margin = new System.Windows.Forms.Padding(2);
-            this.gananciaText.Name = "gananciaText";
-            this.gananciaText.Size = new System.Drawing.Size(259, 20);
-            this.gananciaText.TabIndex = 25;
+            this.txtNetoGravado.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "NetoGravado", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtNetoGravado.Location = new System.Drawing.Point(122, 309);
+            this.txtNetoGravado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNetoGravado.Name = "txtNetoGravado";
+            this.txtNetoGravado.ReadOnly = true;
+            this.txtNetoGravado.Size = new System.Drawing.Size(259, 20);
+            this.txtNetoGravado.TabIndex = 25;
             // 
-            // precioIVAText
+            // txtMargendeganancia
             // 
-            this.precioIVAText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtMargendeganancia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioIVAText.Location = new System.Drawing.Point(122, 286);
-            this.precioIVAText.Margin = new System.Windows.Forms.Padding(2);
-            this.precioIVAText.Name = "precioIVAText";
-            this.precioIVAText.Size = new System.Drawing.Size(259, 20);
-            this.precioIVAText.TabIndex = 24;
+            this.txtMargendeganancia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "MargendeGanancia", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtMargendeganancia.Location = new System.Drawing.Point(122, 286);
+            this.txtMargendeganancia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMargendeganancia.Name = "txtMargendeganancia";
+            this.txtMargendeganancia.ReadOnly = true;
+            this.txtMargendeganancia.Size = new System.Drawing.Size(259, 20);
+            this.txtMargendeganancia.TabIndex = 24;
             // 
-            // ivaText
+            // txtIva
             // 
-            this.ivaText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtIva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ivaText.Location = new System.Drawing.Point(122, 263);
-            this.ivaText.Margin = new System.Windows.Forms.Padding(2);
-            this.ivaText.Name = "ivaText";
-            this.ivaText.Size = new System.Drawing.Size(259, 20);
-            this.ivaText.TabIndex = 23;
+            this.txtIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "PorcentajeIva", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtIva.Location = new System.Drawing.Point(122, 263);
+            this.txtIva.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIva.Name = "txtIva";
+            this.txtIva.ReadOnly = true;
+            this.txtIva.Size = new System.Drawing.Size(259, 20);
+            this.txtIva.TabIndex = 23;
             // 
-            // precioBaseText
+            // txtCosto
             // 
-            this.precioBaseText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtCosto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.precioBaseText.Location = new System.Drawing.Point(122, 239);
-            this.precioBaseText.Margin = new System.Windows.Forms.Padding(2);
-            this.precioBaseText.Name = "precioBaseText";
-            this.precioBaseText.Size = new System.Drawing.Size(259, 20);
-            this.precioBaseText.TabIndex = 22;
+            this.txtCosto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "Costo", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtCosto.Location = new System.Drawing.Point(122, 239);
+            this.txtCosto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.ReadOnly = true;
+            this.txtCosto.Size = new System.Drawing.Size(259, 20);
+            this.txtCosto.TabIndex = 22;
             // 
-            // descripcionText
+            // txtDescripcion
             // 
-            this.descripcionText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.descripcionText.Location = new System.Drawing.Point(122, 217);
-            this.descripcionText.Margin = new System.Windows.Forms.Padding(2);
-            this.descripcionText.Name = "descripcionText";
-            this.descripcionText.Size = new System.Drawing.Size(259, 20);
-            this.descripcionText.TabIndex = 21;
+            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtDescripcion.Location = new System.Drawing.Point(122, 217);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ReadOnly = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(259, 20);
+            this.txtDescripcion.TabIndex = 21;
             // 
             // codigoText
             // 
             this.codigoText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.codigoText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "Codigo", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.codigoText.Location = new System.Drawing.Point(122, 193);
             this.codigoText.Margin = new System.Windows.Forms.Padding(2);
             this.codigoText.Name = "codigoText";
+            this.codigoText.ReadOnly = true;
             this.codigoText.Size = new System.Drawing.Size(259, 20);
             this.codigoText.TabIndex = 19;
             // 
@@ -314,17 +355,6 @@ namespace LATIENDA.Presentacion.Vistas
             this.label5.TabIndex = 37;
             this.label5.Text = "Marca:";
             // 
-            // txtMarca
-            // 
-            this.txtMarca.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMarca.Location = new System.Drawing.Point(122, 170);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(99, 20);
-            this.txtMarca.TabIndex = 38;
-            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -338,24 +368,13 @@ namespace LATIENDA.Presentacion.Vistas
             this.label6.TabIndex = 39;
             this.label6.Text = "Rubro:";
             // 
-            // txtRubro
-            // 
-            this.txtRubro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRubro.Location = new System.Drawing.Point(122, 145);
-            this.txtRubro.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRubro.Name = "txtRubro";
-            this.txtRubro.Size = new System.Drawing.Size(99, 20);
-            this.txtRubro.TabIndex = 40;
-            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(541, 146);
+            this.label7.Location = new System.Drawing.Point(446, 286);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
@@ -368,76 +387,231 @@ namespace LATIENDA.Presentacion.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(540, 196);
+            this.label8.Location = new System.Drawing.Point(662, 286);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 13);
             this.label8.TabIndex = 42;
             this.label8.Text = "Color:";
             // 
-            // comboBox1
+            // cbTalle
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(579, 142);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 43;
+            this.cbTalle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsStock, "Talle", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.cbTalle.DataSource = this.bsTalle;
+            this.cbTalle.DisplayMember = "Descripcion";
+            this.cbTalle.FormattingEnabled = true;
+            this.cbTalle.Location = new System.Drawing.Point(484, 278);
+            this.cbTalle.Name = "cbTalle";
+            this.cbTalle.Size = new System.Drawing.Size(121, 21);
+            this.cbTalle.TabIndex = 43;
+            this.cbTalle.ValueMember = "ID";
             // 
-            // comboBox2
+            // bsStock
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(579, 188);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 44;
+            this.bsStock.DataSource = typeof(LATIENDA.Dominio.Entidades.Stock);
             // 
-            // button1
+            // bsTalle
             // 
-            this.button1.Location = new System.Drawing.Point(568, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 23);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bsTalle.DataSource = typeof(LATIENDA.Dominio.Entidades.Talle);
+            // 
+            // cbColor
+            // 
+            this.cbColor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsStock, "Color", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.cbColor.DataSource = this.bsColor;
+            this.cbColor.DisplayMember = "Descripcion";
+            this.cbColor.FormattingEnabled = true;
+            this.cbColor.Location = new System.Drawing.Point(701, 278);
+            this.cbColor.Name = "cbColor";
+            this.cbColor.Size = new System.Drawing.Size(121, 21);
+            this.cbColor.TabIndex = 44;
+            this.cbColor.ValueMember = "ID";
+            // 
+            // bsColor
+            // 
+            this.bsColor.DataSource = typeof(LATIENDA.Dominio.Entidades.Color);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(690, 401);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(132, 23);
+            this.btnAgregar.TabIndex = 45;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(1, 75);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(833, 10);
+            this.panel4.TabIndex = 46;
+            // 
+            // txtRubro
+            // 
+            this.txtRubro.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "Rubro", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtRubro.Location = new System.Drawing.Point(122, 139);
+            this.txtRubro.Name = "txtRubro";
+            this.txtRubro.ReadOnly = true;
+            this.txtRubro.Size = new System.Drawing.Size(196, 20);
+            this.txtRubro.TabIndex = 47;
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "Marca", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtMarca.Location = new System.Drawing.Point(122, 165);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.ReadOnly = true;
+            this.txtMarca.Size = new System.Drawing.Size(196, 20);
+            this.txtMarca.TabIndex = 48;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(596, 42);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Buscar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(115, 24);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "CANTIDAD: ";
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsStock, "Cantidad", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtCantidad.Location = new System.Drawing.Point(124, 23);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(239, 20);
+            this.txtCantidad.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtCantidad);
+            this.panel1.Location = new System.Drawing.Point(449, 139);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 81);
+            this.panel1.TabIndex = 52;
+            // 
+            // txtTipodeTalle
+            // 
+            this.txtTipodeTalle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProducto, "TipodeTalle", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.txtTipodeTalle.Location = new System.Drawing.Point(122, 381);
+            this.txtTipodeTalle.Name = "txtTipodeTalle";
+            this.txtTipodeTalle.ReadOnly = true;
+            this.txtTipodeTalle.Size = new System.Drawing.Size(259, 20);
+            this.txtTipodeTalle.TabIndex = 53;
+            // 
+            // lbTipodeTalle
+            // 
+            this.lbTipodeTalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTipodeTalle.AutoSize = true;
+            this.lbTipodeTalle.Location = new System.Drawing.Point(8, 388);
+            this.lbTipodeTalle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTipodeTalle.Name = "lbTipodeTalle";
+            this.lbTipodeTalle.Size = new System.Drawing.Size(72, 13);
+            this.lbTipodeTalle.TabIndex = 54;
+            this.lbTipodeTalle.Text = "Tipo de Talle:";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(103, 316);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "$";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(103, 338);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(13, 13);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "$";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(103, 362);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(13, 13);
+            this.label12.TabIndex = 57;
+            this.label12.Text = "$";
             // 
             // AgregarStockVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(834, 462);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(834, 436);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbTipodeTalle);
+            this.Controls.Add(this.txtTipodeTalle);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtRubro);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.cbColor);
+            this.Controls.Add(this.cbTalle);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtRubro);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.existenciaLabel);
-            this.Controls.Add(this.existenciaText);
+            this.Controls.Add(this.txtPreciodeVenta);
             this.Controls.Add(this.precioFinalLabel);
             this.Controls.Add(this.gananciaLabel);
             this.Controls.Add(this.precioIVALabel);
             this.Controls.Add(this.ivaLabel);
             this.Controls.Add(this.baseLabel);
             this.Controls.Add(this.descripcionLabel);
-            this.Controls.Add(this.precioFinalText);
-            this.Controls.Add(this.gananciaText);
-            this.Controls.Add(this.precioIVAText);
-            this.Controls.Add(this.ivaText);
-            this.Controls.Add(this.precioBaseText);
-            this.Controls.Add(this.descripcionText);
+            this.Controls.Add(this.txtCostoIva);
+            this.Controls.Add(this.txtNetoGravado);
+            this.Controls.Add(this.txtMargendeganancia);
+            this.Controls.Add(this.txtIva);
+            this.Controls.Add(this.txtCosto);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.codigoText);
             this.Controls.Add(this.codigoLabel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AgregarStockVista";
             this.Text = "AgregarStock";
+            ((System.ComponentModel.ISupportInitialize)(this.bsProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTalle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsColor)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,34 +620,48 @@ namespace LATIENDA.Presentacion.Vistas
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label existenciaLabel;
-        private System.Windows.Forms.TextBox existenciaText;
+        private System.Windows.Forms.TextBox txtPreciodeVenta;
         private System.Windows.Forms.Label precioFinalLabel;
         private System.Windows.Forms.Label gananciaLabel;
         private System.Windows.Forms.Label precioIVALabel;
         private System.Windows.Forms.Label ivaLabel;
         private System.Windows.Forms.Label baseLabel;
         private System.Windows.Forms.Label descripcionLabel;
-        private System.Windows.Forms.TextBox precioFinalText;
-        private System.Windows.Forms.TextBox gananciaText;
-        private System.Windows.Forms.TextBox precioIVAText;
-        private System.Windows.Forms.TextBox ivaText;
-        private System.Windows.Forms.TextBox precioBaseText;
-        private System.Windows.Forms.TextBox descripcionText;
+        private System.Windows.Forms.TextBox txtCostoIva;
+        private System.Windows.Forms.TextBox txtNetoGravado;
+        private System.Windows.Forms.TextBox txtMargendeganancia;
+        private System.Windows.Forms.TextBox txtIva;
+        private System.Windows.Forms.TextBox txtCosto;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox codigoText;
         private System.Windows.Forms.Label codigoLabel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtRubro;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbTalle;
+        private System.Windows.Forms.ComboBox cbColor;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.BindingSource bsTalle;
+        private System.Windows.Forms.BindingSource bsColor;
+        private System.Windows.Forms.BindingSource bsProducto;
+        private System.Windows.Forms.TextBox txtRubro;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtTipodeTalle;
+        private System.Windows.Forms.Label lbTipodeTalle;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.BindingSource bsStock;
     }
 }

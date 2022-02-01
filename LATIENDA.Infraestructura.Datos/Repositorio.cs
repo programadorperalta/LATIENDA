@@ -31,45 +31,47 @@ namespace LATIENDA.Infraestructura.Datos
 
         public void EliminarProducto(int codigo)
         {
-            _context.Productos.Remove(_context.Productos.SingleOrDefault(d => d.Codigo == codigo));
+            _context.Productos.Remove(_context.Productos.SingleOrDefault(p=> p.Codigo == codigo));
             _context.SaveChanges();
         }
 
         public List<Producto> FiltrarLista(string terminoBusqueda)
         {
-           
             return _context.Productos.ToList().FindAll(x => x.Descripcion.ToLower().Contains(terminoBusqueda?.ToLower()));
-        
+        }
+
+        public List<Talle> FiltrarListadeTalles(int tipodetalle)
+        {
+            return _context.Talles.ToList().FindAll(x=> x.TipodeTalle.ID == tipodetalle);
         }
 
         public void ModificarProducto(int codigoActual, Producto productoModificado)
         {
             
             if (codigoActual != productoModificado.Codigo && YaExiste(productoModificado.Codigo)) throw new Exception("Ya existe un producto con este codigo.");
-            AsignarProducto(productoModificado);
+            var producto = from prod in _context.Productos where prod.Codigo == productoModificado.Codigo select prod;
 
-        }
-
-        public void AsignarProducto(Producto productoModificado)
-        {
-            var producto = _context.Productos.First<Producto>();
-
-            producto.Codigo = productoModificado.Codigo;
-            producto.Descripcion = productoModificado.Descripcion;
-            producto.MargendeGanancia = productoModificado.MargendeGanancia;
-            producto.PorcentajeIva = productoModificado.PorcentajeIva;
-            producto.Marca = productoModificado.Marca;
-            producto.NetoGravado = productoModificado.NetoGravado;
-            producto.PreciodeVenta = productoModificado.PreciodeVenta;
-            producto.Rubro = productoModificado.Rubro;
-            producto.Costo = productoModificado.Costo;
-            producto.CostoConIva = productoModificado.CostoConIva;
-            producto.Descripcion = productoModificado.Descripcion;
+            foreach (Producto prod in producto)
+            {
+                prod.Codigo = productoModificado.Codigo;
+                prod.Costo = productoModificado.Costo;
+                prod.CostoConIva = productoModificado.CostoConIva;
+                prod.Descripcion = productoModificado.Descripcion;
+                prod.Marca = productoModificado.Marca;
+                prod.MargendeGanancia = productoModificado.MargendeGanancia;
+                prod.NetoGravado = productoModificado.NetoGravado;
+                prod.PorcentajeIva = productoModificado.PorcentajeIva;
+                prod.PreciodeVenta = productoModificado.PreciodeVenta;
+                prod.Rubro = productoModificado.Rubro;
+                prod.TipodeTalle = productoModificado.TipodeTalle;
+            }
 
             _context.SaveChanges();
 
 
         }
+
+      
 
 
         private bool YaExiste(int codigoConsulta)
@@ -103,11 +105,25 @@ namespace LATIENDA.Infraestructura.Datos
             return false;
         }
 
-        public void AgregarStock()
+        public void AgregarStock(Stock stock)
         {
-
+            _context.Stocks.Add(stock);
+            _context.SaveChanges();
         }
 
+        public List<Talle> ObtenerListaTalles()
+        {
+            return _context.Talles.ToList();
+        }
 
+        public List<Color> ObtenerListaColores()
+        {
+            return _context.Colores.ToList();
+        }
+
+        public List<TipodeTalle> ObtenerListaDeTiposdeTalles()
+        {
+            return _context.TipodeTalles.ToList();
+        }
     }
 }

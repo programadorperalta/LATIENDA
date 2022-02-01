@@ -21,6 +21,11 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
+        public void AgregarStock(Stock stock)
+        {
+            throw new NotImplementedException();
+        }
+
         //public void AgregarProducto(Producto nuevoProducto)
         //{        
         //    if (YaExiste(nuevoProducto.Codigo)) throw new Exception("Ya existe un producto con este codigo.");
@@ -42,7 +47,22 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
+        public List<Talle> FiltrarListadeTalles(int tipodetalle)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ModificarProducto(int codigoActual, Producto productoModificado)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Color> ObtenerListaColores()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<TipodeTalle> ObtenerListaDeTiposdeTalles()
         {
             throw new NotImplementedException();
         }
@@ -58,6 +78,11 @@ namespace LATIENDA.Infraestructura.Datos
         }
 
         public List<Rubro> ObtenerListaRubros()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Talle> ObtenerListaTalles()
         {
             throw new NotImplementedException();
         }

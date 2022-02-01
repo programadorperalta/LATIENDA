@@ -79,6 +79,6 @@ namespace LATIENDA.Infraestructura.Datos
         public DbSet<Color> Colores { get; set; }
         public DbSet<Talle> Talles { get; set; }
         public DbSet<Venta> Ventas { get; set; }
-
+        public DbSet<TipodeTalle> TipodeTalles { get; set; }
     }
 }

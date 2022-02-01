@@ -18,6 +18,11 @@ namespace LATIENDA.Dominio
         List<Producto> ObtenerListaProductos();
         List<Rubro> ObtenerListaRubros();
         List<Marca> ObtenerListaMarcas();
+        List<Talle> ObtenerListaTalles();
+        List<Color> ObtenerListaColores();
+        List<TipodeTalle> ObtenerListaDeTiposdeTalles();
+        List<Talle> FiltrarListadeTalles(int tipodetalle);
+        void AgregarStock(Stock stock);
         bool ValidarUsuario(string usuario,string contraseña);
 
 

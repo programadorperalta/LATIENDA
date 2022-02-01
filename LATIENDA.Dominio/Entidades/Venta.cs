@@ -14,18 +14,16 @@ namespace LATIENDA.Dominio.Entidades
         private Cliente _cliente;
         private DateTime _fechayhora;
         private Usuario _usuario; //del sistema 
-        private List<Producto> _productos;
         private LineadeVenta _lineadeVenta;
 
         #endregion
 
-        public Venta(int numero, Cliente cliente, Usuario user, List<Producto> productos)
+        public Venta(int numero, Cliente cliente, Usuario user)
         {
             FechayHora = DateTime.Now;
             Numero = numero;
             Cliente = cliente;
             User = user;
-            Productos = productos;
         }
 
 
@@ -48,12 +46,6 @@ namespace LATIENDA.Dominio.Entidades
         {
             get { return _usuario; }
             set { _usuario = value; }
-        }
-
-        public List<Producto> Productos
-        {
-            get { return _productos; }
-            set { _productos = value; }
         }
         #endregion
     }

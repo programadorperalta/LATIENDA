@@ -8,11 +8,11 @@ namespace LATIENDA.Dominio
 {
     public enum CondicionTributaria
     {
-        RI,
-        NR,
-        E,
-        M,
-        CF
+        RI = 0,
+        NR = 1,
+        E = 2,
+        M = 3,
+        CF = 4
 
     }
 }

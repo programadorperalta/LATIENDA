@@ -33,6 +33,7 @@ namespace LATIENDA.Presentacion
             container.RegisterType<IListarProductosVista, ListarProductosVista>();
             container.RegisterType<IModificarProductoVista, ModificarProductoVista>();
             container.RegisterSingleton<IRepositorio,Repositorio>();
+            container.RegisterType<IAgregarStockVista, AgregarStockVista>();
             #endregion
 
             AdministradorDeTareas.Instance.Iniciar<PrincipalTarea>();

@@ -42,7 +42,6 @@ namespace LATIENDA.Dominio.Entidades
 
 
         #region Propiedades
-        public int UserID { get; set; }
         public string NombredeUsuario { get { return _nombredeusuario; } set { _nombredeusuario = value; } }
         public string Clave { get  {  return _clave;  }  set  { _clave = value;  } }
         public virtual RolUsuario RolUsuario { get { return _rolusuario; }  set { _rolusuario = value;  }  }
