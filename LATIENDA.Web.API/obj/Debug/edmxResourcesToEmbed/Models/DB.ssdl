@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cuit" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" />
+    <Property Name="Domicilio" Type="nvarchar(max)" />
+    <Property Name="CondicionTributaria" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Colores">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Legajo" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" />
+    <Property Name="RolEmpleado" Type="int" Nullable="false" />
+    <Property Name="Sucursal_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="LineadeVenta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="Subtotal" Type="float" Nullable="false" />
+    <Property Name="Stock_ID" Type="int" />
+    <Property Name="Venta_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MontoAPagar" Type="float" Nullable="false" />
+    <Property Name="MontoRecibido" Type="float" Nullable="false" />
+    <Property Name="Vuelto" Type="float" Nullable="false" />
+    <Property Name="TipodePago_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="PorcentajeIva" Type="float" Nullable="false" />
+    <Property Name="Costo" Type="float" Nullable="false" />
+    <Property Name="MargendeGanancia" Type="float" Nullable="false" />
+    <Property Name="NetoGravado" Type="float" Nullable="false" />
+    <Property Name="CostoConIva" Type="float" Nullable="false" />
+    <Property Name="PreciodeVenta" Type="float" Nullable="false" />
+    <Property Name="Marca_ID" Type="int" />
+    <Property Name="Rubro_ID" Type="int" />
+    <Property Name="TipodeTalle_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="PuntosdeVenta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="Venta_ID" Type="int" />
+    <Property Name="Sucursal_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Rubros">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Stocks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="Color_ID" Type="int" />
+    <Property Name="Talle_ID" Type="int" />
+    <Property Name="Producto_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Sucursales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="TipodeSucursal" Type="int" Nullable="false" />
+    <Property Name="Empleado_ID" Type="int" />
+    <Property Name="PuntodeVenta_ID" Type="int" />
+    <Property Name="Stock_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Talles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="TipodeTalle_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="TipodePago">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TipodeTalle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descriptiontipodetalle" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombredeUsuario" Type="nvarchar(max)" />
+    <Property Name="Clave" Type="nvarchar(max)" />
+    <Property Name="RolUsuario" Type="int" Nullable="false" />
+    <Property Name="Empleado_ID" Type="int" />
+    <Property Name="Imagen" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechayHora" Type="datetime" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="Cliente_ID" Type="int" />
+    <Property Name="Usuario_ID" Type="int" />
+    <Property Name="Pago_ID" Type="int" />
+  </EntityType>
+  <Association Name="FK_dbo_Empleados_dbo_Sucursales_Sucursal_ID">
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursales">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="Sucursal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_LineadeVenta_dbo_Stocks_Stock_ID">
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="0..1" />
+    <End Role="LineadeVenta" Type="Self.LineadeVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stocks">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LineadeVenta">
+        <PropertyRef Name="Stock_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_LineadeVenta_dbo_Ventas_Venta_ID">
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="0..1" />
+    <End Role="LineadeVenta" Type="Self.LineadeVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ventas">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LineadeVenta">
+        <PropertyRef Name="Venta_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Pago_dbo_TipodePago_TipodePago_ID">
+    <End Role="TipodePago" Type="Self.TipodePago" Multiplicity="0..1" />
+    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipodePago">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="TipodePago_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Productos_dbo_Marcas_Marca_ID">
+    <End Role="Marcas" Type="Self.Marcas" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marcas">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="Marca_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Productos_dbo_Rubros_Rubro_ID">
+    <End Role="Rubros" Type="Self.Rubros" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubros">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="Rubro_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Productos_dbo_TipodeTalle_TipodeTalle_ID">
+    <End Role="TipodeTalle" Type="Self.TipodeTalle" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipodeTalle">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="TipodeTalle_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_PuntosdeVenta_dbo_Sucursales_Sucursal_ID">
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="0..1" />
+    <End Role="PuntosdeVenta" Type="Self.PuntosdeVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursales">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PuntosdeVenta">
+        <PropertyRef Name="Sucursal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_PuntosdeVenta_dbo_Ventas_Venta_ID">
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="0..1" />
+    <End Role="PuntosdeVenta" Type="Self.PuntosdeVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ventas">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PuntosdeVenta">
+        <PropertyRef Name="Venta_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stocks_dbo_Colores_Color_ID">
+    <End Role="Colores" Type="Self.Colores" Multiplicity="0..1" />
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Colores">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="Color_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stocks_dbo_Productos_Producto_ID">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="Producto_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stocks_dbo_Talles_Talle_ID">
+    <End Role="Talles" Type="Self.Talles" Multiplicity="0..1" />
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Talles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="Talle_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sucursales_dbo_Empleados_Empleado_ID">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="Empleado_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sucursales_dbo_PuntosdeVenta_PuntodeVenta_ID">
+    <End Role="PuntosdeVenta" Type="Self.PuntosdeVenta" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PuntosdeVenta">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="PuntodeVenta_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sucursales_dbo_Stocks_Stock_ID">
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stocks">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="Stock_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Talles_dbo_TipodeTalle_TipodeTalle_ID">
+    <End Role="TipodeTalle" Type="Self.TipodeTalle" Multiplicity="0..1" />
+    <End Role="Talles" Type="Self.Talles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipodeTalle">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Talles">
+        <PropertyRef Name="TipodeTalle_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Usuarios_dbo_Empleados_Empleado_ID">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="Empleado_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ventas_dbo_Cliente_Cliente_ID">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="Cliente_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ventas_dbo_Pago_Pago_ID">
+    <End Role="Pago" Type="Self.Pago" Multiplicity="0..1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="Pago_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ventas_dbo_Usuarios_User_ID">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="Usuario_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProductoDBModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Colores" EntityType="Self.Colores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LineadeVenta" EntityType="Self.LineadeVenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pago" EntityType="Self.Pago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PuntosdeVenta" EntityType="Self.PuntosdeVenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rubros" EntityType="Self.Rubros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stocks" EntityType="Self.Stocks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sucursales" EntityType="Self.Sucursales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Talles" EntityType="Self.Talles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipodePago" EntityType="Self.TipodePago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipodeTalle" EntityType="Self.TipodeTalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_Empleados_dbo_Sucursales_Sucursal_ID" Association="Self.FK_dbo_Empleados_dbo_Sucursales_Sucursal_ID">
+      <End Role="Sucursales" EntitySet="Sucursales" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_LineadeVenta_dbo_Stocks_Stock_ID" Association="Self.FK_dbo_LineadeVenta_dbo_Stocks_Stock_ID">
+      <End Role="Stocks" EntitySet="Stocks" />
+      <End Role="LineadeVenta" EntitySet="LineadeVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_LineadeVenta_dbo_Ventas_Venta_ID" Association="Self.FK_dbo_LineadeVenta_dbo_Ventas_Venta_ID">
+      <End Role="Ventas" EntitySet="Ventas" />
+      <End Role="LineadeVenta" EntitySet="LineadeVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Pago_dbo_TipodePago_TipodePago_ID" Association="Self.FK_dbo_Pago_dbo_TipodePago_TipodePago_ID">
+      <End Role="TipodePago" EntitySet="TipodePago" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Productos_dbo_Marcas_Marca_ID" Association="Self.FK_dbo_Productos_dbo_Marcas_Marca_ID">
+      <End Role="Marcas" EntitySet="Marcas" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Productos_dbo_Rubros_Rubro_ID" Association="Self.FK_dbo_Productos_dbo_Rubros_Rubro_ID">
+      <End Role="Rubros" EntitySet="Rubros" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Productos_dbo_TipodeTalle_TipodeTalle_ID" Association="Self.FK_dbo_Productos_dbo_TipodeTalle_TipodeTalle_ID">
+      <End Role="TipodeTalle" EntitySet="TipodeTalle" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_PuntosdeVenta_dbo_Sucursales_Sucursal_ID" Association="Self.FK_dbo_PuntosdeVenta_dbo_Sucursales_Sucursal_ID">
+      <End Role="Sucursales" EntitySet="Sucursales" />
+      <End Role="PuntosdeVenta" EntitySet="PuntosdeVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_PuntosdeVenta_dbo_Ventas_Venta_ID" Association="Self.FK_dbo_PuntosdeVenta_dbo_Ventas_Venta_ID">
+      <End Role="Ventas" EntitySet="Ventas" />
+      <End Role="PuntosdeVenta" EntitySet="PuntosdeVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stocks_dbo_Colores_Color_ID" Association="Self.FK_dbo_Stocks_dbo_Colores_Color_ID">
+      <End Role="Colores" EntitySet="Colores" />
+      <End Role="Stocks" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stocks_dbo_Productos_Producto_ID" Association="Self.FK_dbo_Stocks_dbo_Productos_Producto_ID">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Stocks" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stocks_dbo_Talles_Talle_ID" Association="Self.FK_dbo_Stocks_dbo_Talles_Talle_ID">
+      <End Role="Talles" EntitySet="Talles" />
+      <End Role="Stocks" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sucursales_dbo_Empleados_Empleado_ID" Association="Self.FK_dbo_Sucursales_dbo_Empleados_Empleado_ID">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Sucursales" EntitySet="Sucursales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sucursales_dbo_PuntosdeVenta_PuntodeVenta_ID" Association="Self.FK_dbo_Sucursales_dbo_PuntosdeVenta_PuntodeVenta_ID">
+      <End Role="PuntosdeVenta" EntitySet="PuntosdeVenta" />
+      <End Role="Sucursales" EntitySet="Sucursales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sucursales_dbo_Stocks_Stock_ID" Association="Self.FK_dbo_Sucursales_dbo_Stocks_Stock_ID">
+      <End Role="Stocks" EntitySet="Stocks" />
+      <End Role="Sucursales" EntitySet="Sucursales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Talles_dbo_TipodeTalle_TipodeTalle_ID" Association="Self.FK_dbo_Talles_dbo_TipodeTalle_TipodeTalle_ID">
+      <End Role="TipodeTalle" EntitySet="TipodeTalle" />
+      <End Role="Talles" EntitySet="Talles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Usuarios_dbo_Empleados_Empleado_ID" Association="Self.FK_dbo_Usuarios_dbo_Empleados_Empleado_ID">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ventas_dbo_Cliente_Cliente_ID" Association="Self.FK_dbo_Ventas_dbo_Cliente_Cliente_ID">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ventas_dbo_Pago_Pago_ID" Association="Self.FK_dbo_Ventas_dbo_Pago_Pago_ID">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ventas_dbo_Usuarios_User_ID" Association="Self.FK_dbo_Ventas_dbo_Usuarios_User_ID">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,4 +1,5 @@
-﻿using LATIENDA.Presentacion.Interfaces;
+﻿using LATIENDA.Dominio;
+using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Tareas;
 
 namespace LATIENDA.Presentacion.Presentadores
@@ -14,21 +15,22 @@ namespace LATIENDA.Presentacion.Presentadores
     /// <typeparam name="TTask">Representa el tipo de la tarea asociada. Debe ser un 
     /// subtipo de <see cref="ITarea"/></typeparam>
     /// <typeparam name="TView">Representa el tipo de la vista asociada.</typeparam>
-    public class PresentadorBase<TTask, TView> : IPresentador<TTask, TView>
+
+    public class PresentadorBase<TTask, TView,TSesion> : IPresentador<TTask, TView,TSesion>
         where TTask: class, ITarea
         where TView: class, IVista
+        where TSesion: class, ISesion
     {
         /// <summary>
-        /// Simple implementación de la propiedad <see cref="IPresentador{TTask, TView}.Tarea"/>
+        /// Simple implementación de la propiedad <see cref="IPresentador{TTask, TView , TSesion}.Tarea"/>
         /// Representa una asociación fuertemente tipada a la tarea enlazada.
         /// <para>
         /// Para su uso ver <see cref="IPresentador{TTask, TView}.Tarea"/>
         /// </para>
         /// </summary>
         public virtual TTask Tarea { get; set; }
-
         /// <summary>
-        /// Simple implementación de la propiedad <see cref="IPresentador{TTask, TView}.Vista"/>
+        /// Simple implementación de la propiedad <see cref="IPresentador{TTask, TView , TSesion}.Vista"/>
         /// Representa una asociación fuertemente tipada a la vista enlazada.
         /// <para>
         /// Para su uso ver <see cref="IPresentador{TTask, TView}.Vista"/>
@@ -36,6 +38,7 @@ namespace LATIENDA.Presentacion.Presentadores
         /// </summary>
         public virtual TView Vista { get; set; }
 
+        public virtual TSesion Sesion { get; set; }
         /// <summary>
         /// Implementación de <see cref="IPresentador.Tarea"/> 
         /// como puerta de enlace al propiedad fuertemente tipada a la
@@ -58,15 +61,20 @@ namespace LATIENDA.Presentacion.Presentadores
             set { Vista = value as TView; }
         }
 
+        ISesion IPresentador.Sesion { get { return Sesion; } set { Sesion = value as TSesion; } }
+
+
         /// <summary>
         /// Constructor definido para que la vista sea inyectada (via DI).
         /// Se asocia el mismo presentador a la vista, para que ésta pueda invocarlo.
         /// </summary>
         /// <param name="vista">Tipo asociado a la vista</param>
-        public PresentadorBase(TView vista)
+        public PresentadorBase(TView vista,TSesion sesion)
         {
             Vista = vista;
+            Sesion = sesion;
             Vista.Presentador = this;
         }
+
     }
 }

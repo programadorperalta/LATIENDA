@@ -63,11 +63,17 @@ namespace LATIENDA.Infraestructura.Datos
 
             modelBuilder
                 .Entity<Usuario>()
-                .ToTable("Usuarios").HasKey(u => u.ID);
+                .ToTable("Usuarios").HasKey(u => u.ID).HasRequired(e=>e.Empleado);
+                
 
             modelBuilder
                 .Entity<Stock>()
                 .ToTable("Stocks").HasKey(s => s.ID);
+
+            modelBuilder
+                .Entity<Sucursal>().ToTable("Sucursales").HasKey(s => s.ID);
+
+            modelBuilder.Entity<PuntodeVenta>().ToTable("PuntosdeVenta").HasKey(p => p.ID);
 
         }
 
@@ -80,5 +86,8 @@ namespace LATIENDA.Infraestructura.Datos
         public DbSet<Talle> Talles { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<TipodeTalle> TipodeTalles { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<TipodePago> TipodePagos { get; set; }
+
     }
 }

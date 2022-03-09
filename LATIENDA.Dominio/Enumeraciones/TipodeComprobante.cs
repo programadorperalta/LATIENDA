@@ -8,7 +8,8 @@ namespace LATIENDA.Dominio
 {
     public enum TipodeComprobante
     {
-        A,B
+        A=1,
+        B=2
 
 
     }

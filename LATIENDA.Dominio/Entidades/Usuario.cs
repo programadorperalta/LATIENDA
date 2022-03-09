@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LATIENDA.Dominio.Entidades
 {
-    public class Usuario
+    public class Usuario 
     {
         #region Atributos
         public int ID { get; set; }
-        private string _nombredeusuario;
-        private string _clave;
-        private RolUsuario _rolusuario;
-        private Empleado _empleado;
-        #endregion
+        public string NombredeUsuario { get; set; }
+        public string Clave { get; set; }
+        public virtual RolUsuario Rolusuario { get; set; }
+        public virtual Empleado Empleado { get; set; }
+        public byte[] Imagen { get; set; }
+        #endregion 
 
         #region Constructores
 
@@ -22,30 +24,6 @@ namespace LATIENDA.Dominio.Entidades
         {
 
         }
-
-
-        public Usuario(string nombredeusuario,string clave) // constructor para busqueda 
-        {
-            NombredeUsuario = nombredeusuario;
-            Clave = clave;
-        }
-
-
-        public Usuario(string nombre, string clave, RolUsuario rolusuario, Empleado empleado)
-        {
-            NombredeUsuario = nombre;
-            Clave = clave;
-            RolUsuario = rolusuario;
-            Empleado = empleado;
-        }
-        #endregion
-
-
-        #region Propiedades
-        public string NombredeUsuario { get { return _nombredeusuario; } set { _nombredeusuario = value; } }
-        public string Clave { get  {  return _clave;  }  set  { _clave = value;  } }
-        public virtual RolUsuario RolUsuario { get { return _rolusuario; }  set { _rolusuario = value;  }  }
-        public virtual Empleado Empleado { get { return _empleado; } set { _empleado = value;  } }
         #endregion
     }
 }

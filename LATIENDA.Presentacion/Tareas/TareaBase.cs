@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LATIENDA.Dominio;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 
@@ -30,11 +32,14 @@ namespace LATIENDA.Presentacion.Tareas
         /// </summary>
         /// <param name="mdiPadre"></param>
         public abstract void Iniciar(IVista mdiPadre = null);
-        
+
+      
+
         public void NavegarA<TPresentador>(bool esDialogo = false, bool esMdiHijo = false)
             where TPresentador : IPresentador
         {
             var presentador = Factoria.Instance.Crear<TPresentador>();
+            
             presentador.Tarea = this;
             if (esDialogo)
             {

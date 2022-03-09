@@ -8,40 +8,17 @@ namespace LATIENDA.Dominio.Entidades
 {
     public class LineadeVenta
     {
-        #region Atributos 
+        #region Propiedades 
         public int ID { get; set; }
-        private int _numero;
-        private Producto _producto;
-        private int _cantidad;
-        private double _subtotal;
+        public int Numero { get; set; }
+        public int Cantidad { get; set; }
+        public virtual Stock Stock { get; set; }
+        public double Subtotal { get { return Cantidad * Stock.Producto.PreciodeVenta; } set { } }
         #endregion
 
         #region Constructores 
-        //La linea de venta tiene venta o tiene productos?
-        public LineadeVenta() { }
-
-        public LineadeVenta(int numero,Producto producto,int cantidad)
-        {
-            Numero = numero;
-            Producto = producto;
-            Cantidad = cantidad;
-
-        }
-
+        public LineadeVenta() {}
         #endregion
-
-        #region Propiedades
-        public int Numero { get { return _numero ; } set {_numero = value; } }
-        public Producto Producto { get { return _producto; } set { _producto = value; } }
-        public int Cantidad { get { return _cantidad; }set { _cantidad = value; } }
-        //public double Subtotal { get { return _subtotal = _producto.PreciodeVenta * _cantidad; }set { _subtotal = value; } }
-        #endregion
-
-        public double CalcularSubtotal()
-        {
-            return _subtotal = _producto.PreciodeVenta * _cantidad;
-        }
-
 
 
     }

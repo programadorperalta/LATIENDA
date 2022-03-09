@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
-    public class AgregarProductoPresentador :  PresentadorBase<ProductoTarea, IAgregarProductoVista>
+    public class AgregarProductoPresentador :  PresentadorBase<ProductoTarea, IAgregarProductoVista,ISesion>
     {
         Producto _productoSource;
-        IRepositorio _repositorio;
+        private readonly IRepositorio _repositorio;
 
         public AgregarProductoPresentador(IAgregarProductoVista vista, 
-            IRepositorio repositorio) : base(vista)
+            IRepositorio repositorio,ISesion sesion) : base(vista,sesion)
         {
             _repositorio = repositorio;
             CrearProductoSource();

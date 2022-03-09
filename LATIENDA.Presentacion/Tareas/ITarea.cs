@@ -1,4 +1,6 @@
-﻿using LATIENDA.Presentacion.Interfaces;
+﻿using LATIENDA.Dominio;
+using LATIENDA.Infraestructura.Transversal;
+using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 
 namespace LATIENDA.Presentacion.Tareas

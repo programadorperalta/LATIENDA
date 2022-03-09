@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LATIENDA.Dominio;
 using LATIENDA.Infraestructura.Datos;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Tareas;
 using LATIENDA.Presentacion.Vistas;
@@ -32,11 +33,15 @@ namespace LATIENDA.Presentacion
             container.RegisterType<IAgregarProductoVista, AgregarProductoVista>();
             container.RegisterType<IListarProductosVista, ListarProductosVista>();
             container.RegisterType<IModificarProductoVista, ModificarProductoVista>();
+            container.RegisterType<IComprobanteVista, ComprobanteVista>();
             container.RegisterSingleton<IRepositorio,Repositorio>();
+            container.RegisterSingleton<ISesion,Sesion>();
             container.RegisterType<IAgregarStockVista, AgregarStockVista>();
+            container.RegisterType<IRegistrarVentaVista, RegistrarVentaVista>();
+            
             #endregion
 
-            AdministradorDeTareas.Instance.Iniciar<PrincipalTarea>();
+            AdministradorDeTareas.Instance.Iniciar<PrincipalTarea> ();
             Application.Run(Application.OpenForms[0]);
         }
     }

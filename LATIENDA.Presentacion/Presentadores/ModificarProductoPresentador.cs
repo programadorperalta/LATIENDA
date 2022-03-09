@@ -11,7 +11,7 @@ using LATIENDA.Presentacion.Tareas;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
-    public class ModificarProductoPresentador : PresentadorBase<ProductoTarea, IModificarProductoVista>
+    public class ModificarProductoPresentador : PresentadorBase<ProductoTarea, IModificarProductoVista,ISesion>
     {
         private readonly IRepositorio _repositorio;
         private Producto _productoSource;
@@ -27,7 +27,7 @@ namespace LATIENDA.Presentacion.Presentadores
         }
 
         public ModificarProductoPresentador(IModificarProductoVista vista, 
-            IRepositorio repositorio) : base(vista)
+            IRepositorio repositorio,ISesion sesion) : base(vista,sesion)
         {
             _repositorio = repositorio;
             MostrarRubros();

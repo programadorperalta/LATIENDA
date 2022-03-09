@@ -6,12 +6,12 @@ using LATIENDA.Presentacion.Tareas;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
-    public class ListarProductoPresentador: PresentadorBase<ProductoTarea, IListarProductosVista>
+    public class ListarProductoPresentador: PresentadorBase<ProductoTarea, IListarProductosVista,ISesion>
     {
         private readonly IRepositorio _repositorio;
 
         public ListarProductoPresentador(IListarProductosVista vista, 
-            IRepositorio repositorio): base(vista)
+            IRepositorio repositorio,ISesion sesion): base(vista,sesion)
         {
             _repositorio = repositorio;
             ActualizarInventario();
@@ -46,8 +46,6 @@ namespace LATIENDA.Presentacion.Presentadores
             Tarea.NavegarA<ModificarProductoPresentador>(esDialogo: true, esMdiHijo: true);
             ActualizarInventario();
         }
-
-        
 
         public void EliminarProducto(int codigo)
         {

@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
-    public class AgregarStockPresentador : PresentadorBase<ProductoTarea, IAgregarStockVista>
+    public class AgregarStockPresentador : PresentadorBase<ProductoTarea, IAgregarStockVista,ISesion>
     {
         IRepositorio _repositorio;
         Producto _prod;
         Stock _stockSource;
 
         public AgregarStockPresentador (IAgregarStockVista vista,
-            IRepositorio repositorio) : base(vista)
+            IRepositorio repositorio,ISesion sesion) : base(vista,sesion)
         {
             _repositorio = repositorio;
             CrearStockSource();

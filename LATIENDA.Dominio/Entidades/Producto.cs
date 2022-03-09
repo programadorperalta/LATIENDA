@@ -56,7 +56,7 @@ namespace LATIENDA.Dominio.Entidades
         }
         public string Descripcion { get { return _descripcion; } set { _descripcion = value; } }
         /*Todos los productos tienen IVA del 21%. Este valor podria modificarse*/
-        public double PorcentajeIva { get { return _porcentajeiva = 0.21; } set { _porcentajeiva = value; } }
+        public double PorcentajeIva { get { return _porcentajeiva = ReglasDeNegocio.IVA; } set { _porcentajeiva = value; } }
         /*Al ingresar la mercaderia se indica el costo (lo que se paga al proveedor) del producto.
          Este valor es siempre sin el IVA incluido. 
          */

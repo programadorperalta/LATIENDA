@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,9 @@
     <Compile Include="Entidades\Color.cs" />
     <Compile Include="Entidades\Comprobante.cs" />
     <Compile Include="Entidades\LineadeVenta.cs" />
+    <Compile Include="Entidades\Pago.cs" />
+    <Compile Include="Entidades\ReglasDeNegocio.cs" />
+    <Compile Include="Entidades\TipodePago.cs" />
     <Compile Include="Enumeraciones\CondicionTributaria.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Marca.cs" />

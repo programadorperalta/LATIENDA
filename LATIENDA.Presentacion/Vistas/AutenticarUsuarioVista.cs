@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LATIENDA.Dominio;
 using LATIENDA.Dominio.Entidades;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 
@@ -19,7 +20,11 @@ namespace LATIENDA.Presentacion.Vistas
         public AutenticarUsuario()
         {
             InitializeComponent();
+        }
 
+        public void RecibirSesion(Sesion sesion)
+        {
+            bsSesion.DataSource = sesion;
         }
 
         public void CerrarSesion()
@@ -29,22 +34,8 @@ namespace LATIENDA.Presentacion.Vistas
 
         public void RecibirUsuario(Usuario user)
         {
-            throw new NotImplementedException();
+            bsUsuario.DataSource = user;
         }
-
-        public void ValidarUsuario()
-        {
-            if (!string.IsNullOrEmpty(txtContraseña.Text) && !string.IsNullOrEmpty(txtNombredeUsuario.Text))
-            {
-                    Presentador.ValidarUsuario(txtNombredeUsuario.Text, txtContraseña.Text);
-                    LimpiarCampos();
-            }
-            else
-            {
-                MostrarMensaje("Error: Debe Ingresar Todos los campos",Mensaje.ERROR);
-            }
-        }
-
 
         public void LimpiarCampos()
         {
@@ -54,7 +45,7 @@ namespace LATIENDA.Presentacion.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ValidarUsuario();
+            Presentador.ValidarUsuario();
         }
 
         public void MostrarMensaje(string descripcion, Mensaje tipo)
@@ -65,6 +56,16 @@ namespace LATIENDA.Presentacion.Vistas
         private void button2_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     public class AutenticarUsuarioVistaConPresentador : VistaBase<AutenticarUsuarioPresentador> { }

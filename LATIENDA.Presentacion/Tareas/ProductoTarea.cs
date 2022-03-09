@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 

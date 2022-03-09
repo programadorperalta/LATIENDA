@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LATIENDA.Dominio;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Tareas;
 
@@ -40,6 +42,7 @@ namespace LATIENDA.Presentacion
             where TTarea : ITarea
         {
             var tarea = Factoria.Instance.Crear<TTarea>();
+            Factoria.Instance.Crear<ISesion>();
             tarea.Iniciar(mdiPadre);
         }
     }

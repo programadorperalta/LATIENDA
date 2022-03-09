@@ -161,6 +161,11 @@ namespace LATIENDA.Presentacion.Vistas
         {
             this.Dispose();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
     public class AgregarProductoVistaConPresentador : VistaBase<AgregarProductoPresentador> { }
 }

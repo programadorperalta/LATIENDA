@@ -41,9 +41,18 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,49 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Memoria\Inventario.cs" />
-    <Compile Include="Migrations\202201132330213_Nuevas_Entidades_2022.cs" />
-    <Compile Include="Migrations\202201132330213_Nuevas_Entidades_2022.designer.cs">
-      <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
+    <Compile Include="Migrations\202202171952096_Nuevos cambios.cs" />
+    <Compile Include="Migrations\202202171952096_Nuevos cambios.designer.cs">
+      <DependentUpon>202202171952096_Nuevos cambios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.cs" />
-    <Compile Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.designer.cs">
-      <DependentUpon>202201311504186_Se modifico la clase Empleado otra vez.cs</DependentUpon>
+    <Compile Include="Migrations\202202171957069_Nuevos cambios2.cs" />
+    <Compile Include="Migrations\202202171957069_Nuevos cambios2.designer.cs">
+      <DependentUpon>202202171957069_Nuevos cambios2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202201311555157_Se modifico la clase Usuario.cs" />
-    <Compile Include="Migrations\202201311555157_Se modifico la clase Usuario.designer.cs">
-      <DependentUpon>202201311555157_Se modifico la clase Usuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs" />
-    <Compile Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.designer.cs">
-      <DependentUpon>202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201311635536_Se modifico la clase Producto.cs" />
-    <Compile Include="Migrations\202201311635536_Se modifico la clase Producto.designer.cs">
-      <DependentUpon>202201311635536_Se modifico la clase Producto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201311736591_New Migration.cs" />
-    <Compile Include="Migrations\202201311736591_New Migration.designer.cs">
-      <DependentUpon>202201311736591_New Migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201312035563_Se modifico la clase Stock.cs" />
-    <Compile Include="Migrations\202201312035563_Se modifico la clase Stock.designer.cs">
-      <DependentUpon>202201312035563_Se modifico la clase Stock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202011604162_Se modifico la clase TALLE.cs" />
-    <Compile Include="Migrations\202202011604162_Se modifico la clase TALLE.designer.cs">
-      <DependentUpon>202202011604162_Se modifico la clase TALLE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202012320181_Se modifico la clase Cliente.cs" />
-    <Compile Include="Migrations\202202012320181_Se modifico la clase Cliente.designer.cs">
-      <DependentUpon>202202012320181_Se modifico la clase Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs" />
-    <Compile Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.designer.cs">
-      <DependentUpon>202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs" />
-    <Compile Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.designer.cs">
-      <DependentUpon>202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs</DependentUpon>
+    <Compile Include="Migrations\202202172015244_Entidad Sucursal Modificada.cs" />
+    <Compile Include="Migrations\202202172015244_Entidad Sucursal Modificada.designer.cs">
+      <DependentUpon>202202172015244_Entidad Sucursal Modificada.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductoContext.cs" />
@@ -116,38 +93,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202201132330213_Nuevas_Entidades_2022.resx">
-      <DependentUpon>202201132330213_Nuevas_Entidades_2022.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202171952096_Nuevos cambios.resx">
+      <DependentUpon>202202171952096_Nuevos cambios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201311504186_Se modifico la clase Empleado otra vez.resx">
-      <DependentUpon>202201311504186_Se modifico la clase Empleado otra vez.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202171957069_Nuevos cambios2.resx">
+      <DependentUpon>202202171957069_Nuevos cambios2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201311555157_Se modifico la clase Usuario.resx">
-      <DependentUpon>202201311555157_Se modifico la clase Usuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201311604447_Se modificaron las clases COLOR MARCA RUBRO.resx">
-      <DependentUpon>202201311604447_Se modificaron las clases COLOR MARCA RUBRO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201311635536_Se modifico la clase Producto.resx">
-      <DependentUpon>202201311635536_Se modifico la clase Producto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201311736591_New Migration.resx">
-      <DependentUpon>202201311736591_New Migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201312035563_Se modifico la clase Stock.resx">
-      <DependentUpon>202201312035563_Se modifico la clase Stock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202011604162_Se modifico la clase TALLE.resx">
-      <DependentUpon>202202011604162_Se modifico la clase TALLE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202012320181_Se modifico la clase Cliente.resx">
-      <DependentUpon>202202012320181_Se modifico la clase Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202012324057_Se hizo una segunda modificacion a la clase Cliente.resx">
-      <DependentUpon>202202012324057_Se hizo una segunda modificacion a la clase Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.resx">
-      <DependentUpon>202202012325474_Se modifico la clase Cliente - virtual CondicionTributaria.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202172015244_Entidad Sucursal Modificada.resx">
+      <DependentUpon>202202172015244_Entidad Sucursal Modificada.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

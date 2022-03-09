@@ -6,26 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LATIENDA.Infraestructura.Transversal.Sesion
+namespace LATIENDA.Infraestructura.Transversal
 {
     public class Sesion : ISesion
     {
-        #region Atributos
-        private Usuario _usuario;
-        #endregion
-
-        #region Constructores
-        public Sesion(Usuario usuario)
-        {
-            Usuario = usuario;
-        }
-        #endregion
-
         #region Propiedades
-        public Usuario Usuario
+        public Usuario Usuario { get; set; }
+        public DateTime FechayHora { get; set; }
+        #endregion
+
+        public Sesion()
         {
-            get { return _usuario; }
-            set { _usuario = value; }
+            Usuario = new Usuario();
+            FechayHora = DateTime.Now;
         }
 
         public void Conectar()
@@ -37,9 +30,15 @@ namespace LATIENDA.Infraestructura.Transversal.Sesion
         {
             throw new NotImplementedException();
         }
-        #endregion
 
+        public Usuario GetUsuario()
+        {
+            return Usuario;
+        }
 
-
+        public void EnviarUsuario(Usuario usuario)
+        {
+            Usuario = usuario;
+        }
     }
 }

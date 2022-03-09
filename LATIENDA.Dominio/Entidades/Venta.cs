@@ -10,43 +10,21 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos 
         public int ID { get; set; }
-        private int _numero;
-        private Cliente _cliente;
-        private DateTime _fechayhora;
-        private Usuario _usuario; //del sistema 
-        private LineadeVenta _lineadeVenta;
-
+        public int Numero { get; set; }
+        public virtual Cliente Cliente { get; set; }
+        public virtual DateTime FechayHora { get; set; }
+        public virtual Usuario Usuario { get; set; }
+        public virtual Pago Pago { get; set; }
+        public virtual List<LineadeVenta> LineasdeVenta { get; set; }
         #endregion
 
-        public Venta(int numero, Cliente cliente, Usuario user)
+
+        public Venta()
         {
             FechayHora = DateTime.Now;
-            Numero = numero;
-            Cliente = cliente;
-            User = user;
+            LineasdeVenta = new List<LineadeVenta>();
         }
 
-
-        #region Propiedades 
-        public DateTime FechayHora { get { return _fechayhora; } set { _fechayhora = value; } }
-        public LineadeVenta LDV { get { return _lineadeVenta; } set { _lineadeVenta = value; } }
-        public int Numero
-        {
-            get { return _numero; }
-            set { _numero = value; }
-        }
-
-        public Cliente Cliente
-        {
-            get { return _cliente; }
-            set { _cliente = value; }
-        }
-
-        public Usuario User
-        {
-            get { return _usuario; }
-            set { _usuario = value; }
-        }
-        #endregion
+       
     }
 }

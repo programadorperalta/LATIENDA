@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 using LATIENDA.Dominio;
 using LATIENDA.Dominio.Entidades;
 
+
 namespace LATIENDA.Infraestructura.Datos
 {
     public class Repositorio : IRepositorio
     {
         private ProductoContext _context;
+       
 
         public Repositorio()
         {
             _context = new ProductoContext();
+           
         }
 
-
+        #region Producto
         public void AgregarProducto(Producto nuevoProducto)
         {
             _context.Productos.Add(nuevoProducto);
@@ -31,23 +34,13 @@ namespace LATIENDA.Infraestructura.Datos
 
         public void EliminarProducto(int codigo)
         {
-            _context.Productos.Remove(_context.Productos.SingleOrDefault(p=> p.Codigo == codigo));
+            _context.Productos.Remove(_context.Productos.SingleOrDefault(p => p.Codigo == codigo));
             _context.SaveChanges();
-        }
-
-        public List<Producto> FiltrarLista(string terminoBusqueda)
-        {
-            return _context.Productos.ToList().FindAll(x => x.Descripcion.ToLower().Contains(terminoBusqueda?.ToLower()));
-        }
-
-        public List<Talle> FiltrarListadeTalles(int tipodetalle)
-        {
-            return _context.Talles.ToList().FindAll(x=> x.TipodeTalle.ID == tipodetalle);
         }
 
         public void ModificarProducto(int codigoActual, Producto productoModificado)
         {
-            
+
             if (codigoActual != productoModificado.Codigo && YaExiste(productoModificado.Codigo)) throw new Exception("Ya existe un producto con este codigo.");
             var producto = from prod in _context.Productos where prod.Codigo == productoModificado.Codigo select prod;
 
@@ -67,20 +60,31 @@ namespace LATIENDA.Infraestructura.Datos
             }
 
             _context.SaveChanges();
-
-
         }
 
-      
+        #endregion
 
+        #region Filtros
+        public List<Producto> FiltrarLista(string terminoBusqueda)
+        {
+            return _context.Productos.ToList().FindAll(x => x.Descripcion.ToLower().Contains(terminoBusqueda?.ToLower()));
+        }
 
+        public List<Talle> FiltrarListadeTalles(int tipodetalle)
+        {
+            return _context.Talles.ToList().FindAll(x => x.TipodeTalle.ID == tipodetalle);
+        }
+
+        #endregion
+
+        #region Validaciones
         private bool YaExiste(int codigoConsulta)
         {
             return _context.Productos.ToList().Exists(x => x.Codigo == codigoConsulta);
         }
+        #endregion
 
-
-
+        #region GetListas
         public List<Producto> ObtenerListaProductos()
         {
             return _context.Productos.ToList();
@@ -94,21 +98,6 @@ namespace LATIENDA.Infraestructura.Datos
         public List<Marca> ObtenerListaMarcas()
         {
             return _context.Marcas.ToList();
-        }
-
-        public bool ValidarUsuario(string usuario,string contraseña)
-        {
-            if (_context.Usuarios.ToList().Exists(u=> u.NombredeUsuario == usuario)){
-                return true;
-                
-           }
-            return false;
-        }
-
-        public void AgregarStock(Stock stock)
-        {
-            _context.Stocks.Add(stock);
-            _context.SaveChanges();
         }
 
         public List<Talle> ObtenerListaTalles()
@@ -125,5 +114,97 @@ namespace LATIENDA.Infraestructura.Datos
         {
             return _context.TipodeTalles.ToList();
         }
+        
+        #endregion
+
+        #region Usuario 
+        public bool ValidarUsuario(Usuario usuario)
+        {
+            if (_context.Usuarios.ToList().Exists(u => u.NombredeUsuario.Equals(usuario.NombredeUsuario) && u.Clave.Equals(usuario.Clave)))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public Usuario BuscarUsuario(Usuario usuarioABuscar)
+        {
+            return _context.Usuarios.ToList().Find(u => u.NombredeUsuario.Equals(usuarioABuscar.NombredeUsuario) && u.Clave.Equals(usuarioABuscar.Clave));
+        }
+
+        #endregion
+
+        #region Stock
+        public void AgregarStock(Stock stock)
+        {
+            _context.Stocks.Add(stock);
+            _context.SaveChanges();
+        }
+
+        public Stock BuscarStock(int codigo)
+        {
+            return _context.Stocks.ToList().Find(x=>x.Producto.Codigo == codigo);
+        }
+
+        #endregion
+
+        #region Cliente
+        public void AgregarCliente(Cliente cliente)
+        {
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+        }
+
+        public Cliente BuscarCliente(long cuitoDNI)
+        {
+            return _context.Clientes.ToList().Find(c => c.Cuit == cuitoDNI);
+        }
+
+        public List<Cliente> ObtenerListadeClientes()
+        {
+            return _context.Clientes.ToList();
+        }
+
+        public void EliminarCliente(long cuit)
+        {
+            _context.Clientes.Remove(_context.Clientes.SingleOrDefault(c => c.Cuit == cuit));
+            _context.SaveChanges();
+        }
+
+        #endregion
+
+        #region Venta
+        public void AgregarVenta(Venta venta)
+        {
+            _context.Ventas.Add(venta);
+            _context.SaveChanges();
+        }
+
+        public Venta BuscarVenta(int codigo)
+        {
+            return _context.Ventas.ToList().Find(x=>x.Numero == codigo);
+        }
+
+        public List<Venta> ObtenerListadeVentas()
+        {
+            return _context.Ventas.ToList();
+        }
+
+        public void EliminarVenta(int codigo)
+        {
+            _context.Ventas.Remove(_context.Ventas.SingleOrDefault(x=>x.Numero == codigo));
+            _context.SaveChanges();
+        }
+
+        #endregion
+
+        #region TipodePago
+
+        public List<TipodePago> ObtenerListadeTiposdePagos()
+        {
+            return _context.TipodePagos.ToList();
+        }
+
+        #endregion
     }
 }

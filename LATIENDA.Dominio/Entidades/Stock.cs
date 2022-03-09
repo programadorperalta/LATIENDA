@@ -10,9 +10,9 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos 
         public int ID { get; set; }
-        private int _cantidad;
-        private Color _color;
-        private Talle _talle;
+        public virtual int Cantidad { get; set; }
+        public virtual Color Color { get; set; }
+        public virtual Talle Talle { get; set; }
         public virtual Producto Producto { get; set; }
         #endregion
 
@@ -30,14 +30,6 @@ namespace LATIENDA.Dominio.Entidades
         }
         #endregion
 
-
-        #region Propiedades
-        public int Cantidad { get { return _cantidad; } set { _cantidad = value; } }
-        public Color Color { get { return _color; } set { _color = value; } }
-        public Talle Talle { get { return _talle; } set { _talle = value; } }
-        #endregion
-
-        
 
 
     }

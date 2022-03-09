@@ -12,6 +12,8 @@ namespace LATIENDA.Dominio
     {
         void AgregarProducto(Producto nuevoProducto);
         Producto BuscarProducto(int codigo);
+        Stock BuscarStock(int codigo);
+        Usuario BuscarUsuario(Usuario usuarioABuscar);
         void EliminarProducto(int codigo);
         List<Producto> FiltrarLista(string terminoBusqueda);
         void ModificarProducto(int codigoActual, Producto productoModificado);
@@ -22,9 +24,17 @@ namespace LATIENDA.Dominio
         List<Color> ObtenerListaColores();
         List<TipodeTalle> ObtenerListaDeTiposdeTalles();
         List<Talle> FiltrarListadeTalles(int tipodetalle);
+
+        List<TipodePago> ObtenerListadeTiposdePagos();
         void AgregarStock(Stock stock);
-        bool ValidarUsuario(string usuario,string contraseña);
-
-
+        bool ValidarUsuario(Usuario usuario);
+        void AgregarCliente(Cliente cliente);
+        Cliente BuscarCliente(long cuitoDNI);
+        List<Cliente> ObtenerListadeClientes();
+        void EliminarCliente(long cuit);
+        void AgregarVenta(Venta venta);
+        Venta BuscarVenta(int codigo);
+        List<Venta> ObtenerListadeVentas();
+        void EliminarVenta(int codigo);
     }
 }

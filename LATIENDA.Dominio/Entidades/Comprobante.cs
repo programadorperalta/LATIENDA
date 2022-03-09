@@ -10,35 +10,19 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos 
         public int ID { get; set; }
-        private int _numerocomprobante;
-        private TipodeComprobante _tipodeComprobante;
-        private Venta _venta;
-        private PuntodeVenta _puntodeVenta;
+        public int Numero { get; set; }
+        public TipodeComprobante TipodeComprobante { get; set; }
+        public virtual Venta Venta { get; set; }
+        public virtual PuntodeVenta PuntodeVenta { get; set; }
+        public string Fecha { get; set; }
         #endregion
 
         #region Constructores
         public Comprobante()
         {
-            
-        }
-        public Comprobante(int numeroComprobante, TipodeComprobante tipoComprobante, Venta venta, PuntodeVenta puntodeventa)
-        {
-            NumerodeComprobante = numeroComprobante;
-            TipodeComprobante = tipoComprobante;
-            Venta = venta;
-            PuntodeVenta = puntodeventa;
+            Fecha = $"{DateTime.Today.Year}{DateTime.Today.Month}{DateTime.Today.Day}";
         }
         #endregion
-
-        #region Propiedades
-        public int NumerodeComprobante { get { return _numerocomprobante; } set { _numerocomprobante = value; } }
-        public TipodeComprobante TipodeComprobante { get { return _tipodeComprobante; } set { _tipodeComprobante = value; } } 
-        public Venta Venta { get { return _venta; } set { _venta = value; } }
-        public PuntodeVenta PuntodeVenta { get { return _puntodeVenta; }set { _puntodeVenta = value; } }
-
-        #endregion
-
-
 
     }
 }

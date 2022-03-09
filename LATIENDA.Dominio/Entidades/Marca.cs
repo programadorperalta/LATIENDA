@@ -10,7 +10,7 @@ namespace LATIENDA.Dominio.Entidades
     {
         public int ID { get; set; }
         private string _descripcion;
-
+        //public virtual Producto Producto { get; set; }
         public Marca()
         {
 

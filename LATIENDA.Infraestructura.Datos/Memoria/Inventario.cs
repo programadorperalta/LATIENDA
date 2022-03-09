@@ -9,12 +9,17 @@ using LATIENDA.Dominio.Entidades;
 namespace LATIENDA.Infraestructura.Datos
 {
 
-    public class Inventario : IRepositorio
+    public class Inventario
     {
         private List<Producto> _inventario = new List<Producto>();
         private List<Stock> _stocks = new List<Stock>();
         private List<Talle> _talles = new List<Talle>();
         private List<Venta> _ventas = new List<Venta>();
+
+        public void AgregarCliente(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
 
         public void AgregarProducto(Producto nuevoProducto)
         {
@@ -22,6 +27,16 @@ namespace LATIENDA.Infraestructura.Datos
         }
 
         public void AgregarStock(Stock stock)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AgregarVenta(Venta venta)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Cliente BuscarCliente(long cuitoDNI)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +52,32 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
+        public Stock BuscarStock(int codigo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Usuario BuscarUsuario(Usuario usuarioABuscar)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Venta BuscarVenta(int codigo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EliminarCliente(long cuit)
+        {
+            throw new NotImplementedException();
+        }
+
         public void EliminarProducto(int codigo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EliminarVenta(int codigo)
         {
             throw new NotImplementedException();
         }
@@ -62,7 +102,22 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
+        public List<Cliente> ObtenerListadeClientes()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<TipodePago> ObtenerListadeTiposdePagos()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<TipodeTalle> ObtenerListaDeTiposdeTalles()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Venta> ObtenerListadeVentas()
         {
             throw new NotImplementedException();
         }
@@ -88,6 +143,11 @@ namespace LATIENDA.Infraestructura.Datos
         }
 
         public bool ValidarUsuario(string usuario, string contraseña)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ValidarUsuario(Usuario usuario)
         {
             throw new NotImplementedException();
         }

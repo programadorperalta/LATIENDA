@@ -67,3 +67,9 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Unity.Container.pdb
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.csproj.CopyComplete
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Transversal.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Transversal.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.ComprobanteVista.resources

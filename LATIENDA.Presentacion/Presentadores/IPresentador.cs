@@ -1,4 +1,5 @@
-﻿using LATIENDA.Presentacion.Interfaces;
+﻿using LATIENDA.Dominio;
+using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Tareas;
 
 namespace LATIENDA.Presentacion.Presentadores
@@ -59,5 +60,6 @@ namespace LATIENDA.Presentacion.Presentadores
         /// </para>
         /// </summary>
         IVista Vista { get; set; }
+        ISesion Sesion { get; set; }
     }
 }

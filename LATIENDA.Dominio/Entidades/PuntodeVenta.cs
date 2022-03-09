@@ -10,26 +10,20 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos 
         public int ID { get; set; }
-        private int _numero;
-        private Venta _venta;
+        public int Numero { get; set; }
+        public Venta Venta { get; set; }
         #endregion
 
 
         #region Constructores
-        public PuntodeVenta(int numero)
+        public PuntodeVenta()
         {
-            Numero = numero;
+           
         }
-
         #endregion
 
 
-        #region Propiedades
-        public Venta Venta { get { return _venta; } set { _venta = value; } }
-
-        public int Numero { get { return _numero; } set { _numero = value; } }
-        #endregion
-
+      
 
     }
 }

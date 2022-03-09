@@ -314,8 +314,6 @@ namespace LATIENDA.Presentacion.Vistas
         private System.Windows.Forms.ToolStripLabel BusquedaLabel;
         private System.Windows.Forms.ToolStripTextBox BusquedaText;
         private System.Windows.Forms.BindingSource bsProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precioIVADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn existenciaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

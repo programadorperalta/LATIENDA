@@ -1,4 +1,5 @@
-﻿using LATIENDA.Presentacion.Interfaces;
+﻿using LATIENDA.Infraestructura.Transversal;
+using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 using System;
 using System.Collections.Generic;

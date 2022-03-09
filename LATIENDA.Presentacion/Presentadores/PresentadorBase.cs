@@ -24,7 +24,10 @@ namespace LATIENDA.Presentacion.Presentadores
         /// Puede ser sobreescrita en las clases derivadas <see cref="IPresentador.Vista"/>
         /// </summary>
         public virtual IVista Vista { get; set; }
-        public virtual IRepositorio Repositorio { get; set; }
+        /// Propiedad que representa la sesion iniciada.
+        /// No puede ser sobreescrita en las clases derivadas <see cref="IPresentador.Sesion"/>
+        /// </summary>
+        /// 
         public virtual ISesion Sesion { get; set; }
 
     }

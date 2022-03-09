@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LATIENDA.Dominio;
+using LATIENDA.Dominio.Entidades;
+using LATIENDA.Infraestructura.Transversal;
 using LATIENDA.Presentacion.Interfaces;
 using LATIENDA.Presentacion.Presentadores;
 
@@ -29,11 +32,17 @@ namespace LATIENDA.Presentacion.Vistas
         {
             Dispose();
         }
-        
-        public void MostrarUsuario(string nombre)
+
+        public void MostrarMensaje(string descripcion, Mensaje tipo)
         {
-            txtNombreUsuario.Text = $"Bienvenid@: {nombre}";
+            MessageBox.Show(descripcion, tipo.ToString(), MessageBoxButtons.OK);
         }
+
+        public void MostrarUsuario(Sesion sesion)
+        {
+            txtNombreUsuario.Text = $"Bienvenid@: {sesion.Usuario.Empleado.Nombre} Inicio de sesion: {sesion.FechayHora}";
+        }
+
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
@@ -47,7 +56,7 @@ namespace LATIENDA.Presentacion.Vistas
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-
+            Presentador.IniciarVenta();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -68,6 +77,16 @@ namespace LATIENDA.Presentacion.Vistas
         private void iconButton3_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        public void RecibirTienda(Tienda tienda)
+        {
+            bsTienda.DataSource = tienda;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 

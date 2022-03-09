@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,11 @@ namespace LATIENDA.Dominio.Entidades
     {
         #region Atributos
         public int ID { get; set; }
-        private int _legajo;
-        private string _nombre;
-        private RolEmpleado _rolempleado;
+        public int Legajo { get; set; }
+        public string Nombre { get; set; }
+        public virtual RolEmpleado RolEmpleado { get; set; }
+        public virtual IList<Usuario> Usuarios { get; set; }
         #endregion
-
 
         #region Constructores
         public Empleado()
@@ -28,13 +29,6 @@ namespace LATIENDA.Dominio.Entidades
             RolEmpleado = rol;
         }
         #endregion
-
-        #region Propiedades
-        public int Legajo { get { return _legajo; } set { _legajo = value; } }
-        public string Nombre { get { return _nombre; } set { _nombre = value; } }
-        public virtual RolEmpleado RolEmpleado { get { return _rolempleado; } set { _rolempleado = value; } }
-        #endregion
-
 
     }
 }

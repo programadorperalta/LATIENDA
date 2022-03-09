@@ -9,27 +9,17 @@ namespace LATIENDA.Dominio.Entidades
     public class Tienda
     {
         public int ID { get; set; }
-        public long _cuit;
-        public CondicionTributaria _condiciontributaria;
-        public List<Sucursal> _sucursales;
+        public long Cuit { get; set; }
+        public string Nombre { get; set; }
+        public CondicionTributaria CondicionTributaria { get; set; }
+        public virtual ICollection<Sucursal> Sucursales { get; set; }
+        
 
         public Tienda()
         {
-            Cuit = 30641405554;
-            _sucursales = new List<Sucursal>();
+            Nombre = "Mi Tienda Indumentaria y Calzado";
+            CondicionTributaria = CondicionTributaria.RI;
         }
-
-        public void Sucursales()
-        {
-            _sucursales.Add
-                (
-                new Sucursal()
-                ) ;
-        }
-
-        
-        public long Cuit { get { return _cuit; } set { _cuit = value; } }
-
 
     }
 }

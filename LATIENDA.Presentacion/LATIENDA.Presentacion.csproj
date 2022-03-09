@@ -92,6 +92,7 @@
     <Compile Include="Interfaces\IAgregarProductoVista.cs" />
     <Compile Include="Interfaces\IAgregarStockVista.cs" />
     <Compile Include="Interfaces\IAutenticarUsuarioVista.cs" />
+    <Compile Include="Interfaces\IComprobanteVista.cs" />
     <Compile Include="Interfaces\IListarProductosVista.cs" />
     <Compile Include="Interfaces\IModificarProductoVista.cs" />
     <Compile Include="Interfaces\IPrincipalVista.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Presentadores\AgregarProductoPresentador.cs" />
     <Compile Include="Presentadores\AgregarStockPresentador.cs" />
     <Compile Include="Presentadores\AutenticarUsuarioPresentador.cs" />
+    <Compile Include="Presentadores\ComprobantePresentador.cs" />
     <Compile Include="Presentadores\IPresentador.cs" />
     <Compile Include="Presentadores\IPresentadorGenerico.cs" />
     <Compile Include="Presentadores\ListarProductoPresentador.cs" />
@@ -115,6 +117,7 @@
     <Compile Include="Tareas\StockTarea.cs" />
     <Compile Include="Tareas\TareaBase.cs" />
     <Compile Include="Tareas\PrincipalTarea.cs" />
+    <Compile Include="Tareas\VentaTarea.cs" />
     <Compile Include="Vistas\AgregarProductoVista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +135,12 @@
     </Compile>
     <Compile Include="Vistas\AutenticarUsuarioVista.Designer.cs">
       <DependentUpon>AutenticarUsuarioVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ComprobanteVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ComprobanteVista.Designer.cs">
+      <DependentUpon>ComprobanteVista.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PrincipalVista.cs">
       <SubType>Form</SubType>
@@ -180,6 +189,9 @@
     <EmbeddedResource Include="Vistas\AutenticarUsuarioVista.resx">
       <DependentUpon>AutenticarUsuarioVista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ComprobanteVista.resx">
+      <DependentUpon>ComprobanteVista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\PrincipalVista.resx">
       <DependentUpon>PrincipalVista.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,13 +220,20 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Dominio.Inventario.datasource" />
     <None Include="Properties\DataSources\Dominio.Producto.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Cliente.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Color.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.LineadeVenta.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Marca.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Pago.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Producto.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Rubro.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Stock.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Talle.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Tienda.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.TipodePago.datasource" />
     <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.TipodeTalle.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Dominio.Entidades.Venta.datasource" />
+    <None Include="Properties\DataSources\LATIENDA.Infraestructura.Transversal.Sesion.datasource" />
     <None Include="Properties\DataSources\Tp6.Dominio.Producto.datasource" />
     <None Include="Properties\DataSources\Tp7.Dominio.Entidades.Usuario.datasource" />
     <None Include="Properties\DataSources\Tp7.Dominio.Marca.datasource" />
@@ -249,9 +268,17 @@
       <Project>{95dc8d16-e4fb-4719-a929-f5b5add9a1bb}</Project>
       <Name>LATIENDA.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LATIENDA.Infraestructura.Cliente.AccesoExterno\LATIENDA.Infraestructura.Cliente.AccesoExterno.csproj">
+      <Project>{8d90d6a2-91c3-4847-a3e1-a2a938ebe80e}</Project>
+      <Name>LATIENDA.Infraestructura.Cliente.AccesoExterno</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LATIENDA.Infraestructura.Datos\LATIENDA.Infraestructura.Datos.csproj">
       <Project>{3929e067-b99d-4701-a815-9290b8497ded}</Project>
       <Name>LATIENDA.Infraestructura.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LATIENDA.Infraestructura.Transversal\LATIENDA.Infraestructura.Transversal.csproj">
+      <Project>{7ad58820-75a5-4049-8b6c-2b1e57697c13}</Project>
+      <Name>LATIENDA.Infraestructura.Transversal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

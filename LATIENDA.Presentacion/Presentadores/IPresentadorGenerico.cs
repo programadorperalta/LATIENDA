@@ -1,4 +1,5 @@
-﻿using LATIENDA.Presentacion.Tareas;
+﻿using LATIENDA.Dominio;
+using LATIENDA.Presentacion.Tareas;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
@@ -14,9 +15,10 @@ namespace LATIENDA.Presentacion.Presentadores
     /// <typeparam name="TTask">Representa el tipo de la tarea asociada. Debe ser un 
     /// subtipo de <see cref="ITarea"/></typeparam>
     /// <typeparam name="TView">Representa el tipo de la vista asociada.</typeparam>
-    public interface IPresentador<TTask, TView> : IPresentador
+    public interface IPresentador<TTask, TView,TSesion> : IPresentador
         where TTask : ITarea
         where TView : class
+        where TSesion : ISesion
     {
         /// <summary>
         /// Propiedad para acceder a la tarea asociada al tipo genérico.
@@ -26,7 +28,6 @@ namespace LATIENDA.Presentacion.Presentadores
         /// </para>
         /// </summary>
         new TTask Tarea { get; set; }
-
         /// <summary>
         /// Propiedad para acceder a la vista asociada al tipo genérico.
         /// <para>
@@ -35,5 +36,6 @@ namespace LATIENDA.Presentacion.Presentadores
         /// </para>
         /// </summary>
         new TView Vista { get; set; }
+        new TSesion Sesion { get; set; }
     }
 }
