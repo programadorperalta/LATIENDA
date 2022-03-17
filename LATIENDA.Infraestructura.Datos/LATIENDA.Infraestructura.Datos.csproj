@@ -74,6 +74,26 @@
     <Compile Include="Migrations\202202172015244_Entidad Sucursal Modificada.designer.cs">
       <DependentUpon>202202172015244_Entidad Sucursal Modificada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203171900262_Se modifico la clase Venta Linea de venta.cs" />
+    <Compile Include="Migrations\202203171900262_Se modifico la clase Venta Linea de venta.designer.cs">
+      <DependentUpon>202203171900262_Se modifico la clase Venta Linea de venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172009060_Se agrego una instancia de Pago en la Venta.cs" />
+    <Compile Include="Migrations\202203172009060_Se agrego una instancia de Pago en la Venta.designer.cs">
+      <DependentUpon>202203172009060_Se agrego una instancia de Pago en la Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172041595_Se agregaron nuevos cambios.cs" />
+    <Compile Include="Migrations\202203172041595_Se agregaron nuevos cambios.designer.cs">
+      <DependentUpon>202203172041595_Se agregaron nuevos cambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172051126_Se agrego el metodo AgregarLineaDeVentaALaLista.cs" />
+    <Compile Include="Migrations\202203172051126_Se agrego el metodo AgregarLineaDeVentaALaLista.designer.cs">
+      <DependentUpon>202203172051126_Se agrego el metodo AgregarLineaDeVentaALaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.cs" />
+    <Compile Include="Migrations\202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.designer.cs">
+      <DependentUpon>202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +121,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202172015244_Entidad Sucursal Modificada.resx">
       <DependentUpon>202202172015244_Entidad Sucursal Modificada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203171900262_Se modifico la clase Venta Linea de venta.resx">
+      <DependentUpon>202203171900262_Se modifico la clase Venta Linea de venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172009060_Se agrego una instancia de Pago en la Venta.resx">
+      <DependentUpon>202203172009060_Se agrego una instancia de Pago en la Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172041595_Se agregaron nuevos cambios.resx">
+      <DependentUpon>202203172041595_Se agregaron nuevos cambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172051126_Se agrego el metodo AgregarLineaDeVentaALaLista.resx">
+      <DependentUpon>202203172051126_Se agrego el metodo AgregarLineaDeVentaALaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.resx">
+      <DependentUpon>202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

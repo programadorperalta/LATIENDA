@@ -17,7 +17,9 @@ namespace LATIENDA.Dominio.Entidades
         #endregion
 
         #region Constructores 
-        public LineadeVenta() {}
+        public LineadeVenta() 
+        {
+        }
         #endregion
 
 

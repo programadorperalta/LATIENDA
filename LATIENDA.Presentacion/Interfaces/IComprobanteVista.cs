@@ -9,6 +9,6 @@ namespace LATIENDA.Presentacion.Interfaces
 {
     public interface IComprobanteVista : IVista
     {
-        void RecibirComprobante(Comprobante comprobante);
+        void RecibirComprobante(Venta venta);
     }
 }

@@ -63,6 +63,7 @@
     <Compile Include="Entidades\Tienda.cs" />
     <Compile Include="Enumeraciones\RolUsuario.cs" />
     <Compile Include="Enumeraciones\TipodeComprobante.cs" />
+    <Compile Include="Enumeraciones\TipoDeDocumento.cs" />
     <Compile Include="Enumeraciones\TipodeSucursal.cs" />
     <Compile Include="Entidades\TipodeTalle.cs" />
     <Compile Include="Entidades\Usuario.cs" />

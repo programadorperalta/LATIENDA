@@ -12,7 +12,6 @@ namespace LATIENDA.Dominio.Entidades
         public int ID { get; set; }
         public int Numero { get; set; }
         public TipodeComprobante TipodeComprobante { get; set; }
-        public virtual Venta Venta { get; set; }
         public virtual PuntodeVenta PuntodeVenta { get; set; }
         public string Fecha { get; set; }
         #endregion
@@ -20,7 +19,8 @@ namespace LATIENDA.Dominio.Entidades
         #region Constructores
         public Comprobante()
         {
-            Fecha = $"{DateTime.Today.Year}{DateTime.Today.Month}{DateTime.Today.Day}";
+            Fecha = DateTime.Now.ToString("yyyyMMdd");
+            //string fechaSalida = Fecha.ToString("yyyymmdd");
         }
         #endregion
 

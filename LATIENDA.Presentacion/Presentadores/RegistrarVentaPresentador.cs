@@ -17,13 +17,7 @@ namespace LATIENDA.Presentacion.Presentadores
     {
         private IRepositorio _repositorio;
         Cliente _clienteSource;
-        //Producto _productoSource;
         Venta _ventaSource;
-        Stock _stockSource;
-        LineadeVenta _lineadeVentaSource;
-        List<LineadeVenta> _lineadeVentasTemporal = new List<LineadeVenta>();
-        private Comprobante _comprobante = new Comprobante();
-        Pago _pagoSource;
         double acumulador = 0;
 
         public RegistrarVentaPresentador(IRegistrarVentaVista vista,IRepositorio repositorio,ISesion sesion) : base(vista,sesion)
@@ -50,23 +44,19 @@ namespace LATIENDA.Presentacion.Presentadores
 
         public void CrearPagoSource()
         {
-            _pagoSource = null;
-            _pagoSource = new Pago();
-            Vista.RecibirPago(_pagoSource);
+            Vista.RecibirPago(_ventaSource.Pago);
         }
 
         public void CargarVenta()
         {
             _ventaSource.Cliente = _clienteSource;
-            _ventaSource.Pago = _pagoSource;
-            _ventaSource.LineasdeVenta = _lineadeVentasTemporal;
             _ventaSource.Usuario = Sesion.GetUsuario();
         }
 
 
         public void GenerarComprobante()
         {
-            CargarVenta();
+            CargarVenta(); 
             Tarea.Venta = _ventaSource;
             Tarea.NavegarA<ComprobantePresentador>(esDialogo: true, esMdiHijo: true);
         }
@@ -95,33 +85,32 @@ namespace LATIENDA.Presentacion.Presentadores
 
         public void CargarLineadeVentaSource()
         {
-            _lineadeVentaSource = null;
-            _lineadeVentaSource = new LineadeVenta();
-            Vista.RecibirLineaDeVenta(_lineadeVentaSource);
+            Vista.RecibirLineaDeVenta(_ventaSource.LineadeVenta);
         }
 
         public void CalcularTotal()
         {
-            acumulador += _lineadeVentaSource.Subtotal;
+            acumulador += _ventaSource.LineadeVenta.Subtotal;
             Vista.MostrarTotal(acumulador);
             CargarLineadeVentaSource();
         }
 
-        public void AgregarStockALineadeVenta()
+        public void CargarTabladeLineaDeVenta()
         {
-            _lineadeVentaSource.Stock = _stockSource;
-            _lineadeVentasTemporal.Add(_lineadeVentaSource);
-            Vista.CargarTabladeProductos(_lineadeVentaSource);
+            Vista.CargarTabladeProductos(_ventaSource.LineadeVenta);
         }
 
         public void BuscarStockdeProducto(int codigo)
         {
-            _stockSource = _repositorio.BuscarStock(codigo);
+            _ventaSource.LineadeVenta.Stock = _repositorio.BuscarStock(codigo);
 
-            if (_stockSource!=null)
+            if (_ventaSource.LineadeVenta.Stock != null)
             {
-                Vista.RecibirStock(_stockSource);
+                Vista.RecibirStock(_ventaSource.LineadeVenta.Stock);
+                _ventaSource.AgregarLineaDeVentaAlaLista();
+
                 Vista.MostrarMensaje("Producto Encontrado con exito!",Mensaje.EXITO);
+
             }
             else
             {

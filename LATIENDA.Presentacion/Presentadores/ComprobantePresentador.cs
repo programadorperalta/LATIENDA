@@ -16,7 +16,7 @@ namespace LATIENDA.Presentacion.Presentadores
     {
 
         private readonly IRepositorio _repositorio;
-        private Comprobante _comprobanteSource;
+        //private Comprobante _comprobanteSource;
 
         public override VentaTarea Tarea
         {
@@ -38,32 +38,39 @@ namespace LATIENDA.Presentacion.Presentadores
 
         public void CargarComprobante()
         {
-            _comprobanteSource = null;
-            _comprobanteSource = ReglasDeNegocio.DeterminarComprobante(Tarea.Venta.Cliente);
-            _comprobanteSource.Numero = 1;
-            _comprobanteSource.Venta= Tarea.Venta;
-            Vista.RecibirComprobante(_comprobanteSource);
+
+            Tarea.Venta.Comprobante.Numero = 2; //Autogenerado
+            Tarea.Venta.DeterminarComprobante();
+            Vista.RecibirComprobante(Tarea.Venta);
 
         }
 
         public void ConexionServicioExterno()
         {
-            MessageBox.Show($"Tipo de Comprobante a emitir: {_comprobanteSource.TipodeComprobante}");
+            MessageBox.Show($"Tipo de Comprobante a emitir: {Tarea.Venta.Comprobante.TipodeComprobante}");
 
             var adaptador = Adaptador.ObtenerAutorizacion();
 
             if (adaptador != null)
             {
-                var response = Adaptador.ObtenerCAEResponse(adaptador,_comprobanteSource);
+                var response = Adaptador.ObtenerCAEResponse(adaptador, Tarea.Venta);
 
-                if (response.FeCabResp.Resultado.Equals("A"))
-                {
-                    MessageBox.Show("Se ha aprobado el comprobante con exito");
-                }
-                else
-                {
-                    MessageBox.Show("No se ha aprobado el comprobante");
-                }
+                MessageBox.Show(response.FeCabResp.Resultado);
+
+                //foreach (var a in response.Errors)
+                //{
+                //    MessageBox.Show(a.Msg);
+                //}
+
+                //MessageBox.Show(response.Errors.ToString());
+                //if (response.FeCabResp.Resultado.Equals("A"))
+                //{
+                //    MessageBox.Show("Se ha aprobado el comprobante con exito");
+                //}
+                //else
+                //{
+                //    MessageBox.Show(response);
+                //}
 
 
 

@@ -12,6 +12,8 @@ namespace LATIENDA.Dominio.Entidades
         public int ID { get; set; }
         private long _cuit;
         public virtual CondicionTributaria CondicionTributaria { get; set; }
+        public virtual TipoDeDocumento TipoDeDocumento { get; set; }
+
         private string _nombre;
         private string _domicilio;
         #endregion

@@ -21,37 +21,37 @@ namespace LATIENDA.Presentacion.Vistas
         }
 
 
-        public void RecibirComprobante(Comprobante comprobante)
+        public void RecibirComprobante(Venta venta)
         {
-            lbTipodeFactura.Text = comprobante.TipodeComprobante.ToString();
-            lbCliente.Text = comprobante.Venta.Cliente.Nombre;
+            lbTipodeFactura.Text = venta.Comprobante.TipodeComprobante.ToString();
+            lbCliente.Text = venta.Cliente.Nombre;
             
             lbNumero.Text = Convert.ToString(16);
-            lbFecha.Text = Convert.ToString(comprobante.Fecha);
+            lbFecha.Text = Convert.ToString(venta.Comprobante.Fecha);
 
-            CargarCuerpoComprobante(comprobante);
-            CargarPieComprobante(comprobante);
+            CargarCuerpoComprobante(venta);
+            CargarPieComprobante(venta);
         }
 
 
-        private void CargarCuerpoComprobante(Comprobante comprobante)
+        private void CargarCuerpoComprobante(Venta venta)
         {
             //PRODUCTO $NETO %IVA $IVA $TOTALES
             //
-            foreach (LineadeVenta lv in comprobante.Venta.LineasdeVenta)
+            foreach (LineadeVenta lv in venta.LineasdeVenta)
             {
                 dataGridView1.Rows.Add(lv.Stock.Producto.Descripcion, lv.Stock.Producto.NetoGravado, lv.Stock.Producto.PorcentajeIva, lv.Stock.Producto.CostoConIva, lv.Stock.Producto.PreciodeVenta);
             }
         }
 
-        private void CargarPieComprobante(Comprobante comprobante)
+        private void CargarPieComprobante(Venta venta)
         {
-            lbTotal.Text = Convert.ToString(comprobante.Venta.Pago.MontoAPagar);
-            lbPago.Text = Convert.ToString(comprobante.Venta.Pago.MontoRecibido);
-            lbVuelto.Text = Convert.ToString(comprobante.Venta.Pago.Vuelto);
-            lbBase.Text = Convert.ToString(comprobante.Venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado));
+            lbTotal.Text = Convert.ToString(venta.Pago.MontoAPagar);
+            lbPago.Text = Convert.ToString(venta.Pago.MontoRecibido);
+            lbVuelto.Text = Convert.ToString(venta.Pago.Vuelto);
+            lbBase.Text = Convert.ToString(venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado));
             lbIVA.Text = Convert.ToString(ReglasDeNegocio.IVA);
-            lbImporte.Text = Convert.ToString(comprobante.Venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado) * ReglasDeNegocio.IVA);
+            lbImporte.Text = Convert.ToString(venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado) * ReglasDeNegocio.IVA);
             lbMoneda.Text = "PES";
             lbTipodeCambio.Text = Convert.ToString(1);
         }

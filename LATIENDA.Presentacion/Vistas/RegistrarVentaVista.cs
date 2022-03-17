@@ -100,7 +100,7 @@ namespace LATIENDA.Presentacion.Vistas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Presentador.AgregarStockALineadeVenta();
+            Presentador.CargarTabladeLineaDeVenta();
 
             Presentador.CalcularTotal();
         }
