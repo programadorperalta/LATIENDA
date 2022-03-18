@@ -10,5 +10,9 @@ namespace LATIENDA.Presentacion.Interfaces
     public interface IComprobanteVista : IVista
     {
         void RecibirComprobante(Venta venta);
+
+        void CargarCuerpoComprobante(Venta venta);
+
+        //void CargarPieComprobante(Venta venta);
     }
 }

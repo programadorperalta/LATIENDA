@@ -168,41 +168,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
-    <Compile Include="Controllers\ColorsController.cs" />
+    <Compile Include="Controllers\ColoresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProductoesController.cs" />
-    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LATIENDAContext.cs" />
-    <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\Color.cs" />
-    <Compile Include="Models\Comprobante.cs" />
-    <Compile Include="Models\Empleado.cs" />
-    <Compile Include="Models\Enumeraciones\CondicionTributaria.cs" />
-    <Compile Include="Models\Enumeraciones\EstadoProducto.cs" />
-    <Compile Include="Models\Enumeraciones\Mensaje.cs" />
-    <Compile Include="Models\Enumeraciones\RolEmpleado.cs" />
-    <Compile Include="Models\Enumeraciones\RolUsuario.cs" />
-    <Compile Include="Models\Enumeraciones\TipodeComprobante.cs" />
-    <Compile Include="Models\Enumeraciones\TipodeSucursal.cs" />
-    <Compile Include="Models\LineadeVenta.cs" />
-    <Compile Include="Models\Marca.cs" />
-    <Compile Include="Models\Pago.cs" />
-    <Compile Include="Models\Producto.cs" />
-    <Compile Include="Models\PuntodeVenta.cs" />
-    <Compile Include="Models\ReglasDeNegocio.cs" />
-    <Compile Include="Models\Rubro.cs" />
-    <Compile Include="Models\Stock.cs" />
-    <Compile Include="Models\Sucursal.cs" />
-    <Compile Include="Models\Talle.cs" />
-    <Compile Include="Models\Tienda.cs" />
-    <Compile Include="Models\TipodePago.cs" />
-    <Compile Include="Models\TipodeTalle.cs" />
-    <Compile Include="Models\Usuario.cs" />
-    <Compile Include="Models\Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

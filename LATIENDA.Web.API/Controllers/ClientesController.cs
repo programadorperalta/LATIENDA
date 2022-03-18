@@ -8,8 +8,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using LATIENDA.Dominio.Entidades;
 using LATIENDA.Web.API;
-using LATIENDA.Web.API.Models;
 
 namespace LATIENDA.Web.API.Controllers
 {

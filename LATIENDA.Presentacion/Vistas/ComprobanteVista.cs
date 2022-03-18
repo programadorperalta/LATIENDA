@@ -25,16 +25,12 @@ namespace LATIENDA.Presentacion.Vistas
         {
             lbTipodeFactura.Text = venta.Comprobante.TipodeComprobante.ToString();
             lbCliente.Text = venta.Cliente.Nombre;
-            
             lbNumero.Text = Convert.ToString(16);
             lbFecha.Text = Convert.ToString(venta.Comprobante.Fecha);
-
-            CargarCuerpoComprobante(venta);
-            CargarPieComprobante(venta);
         }
 
 
-        private void CargarCuerpoComprobante(Venta venta)
+        public void CargarCuerpoComprobante(Venta venta)
         {
             //PRODUCTO $NETO %IVA $IVA $TOTALES
             //
@@ -42,16 +38,13 @@ namespace LATIENDA.Presentacion.Vistas
             {
                 dataGridView1.Rows.Add(lv.Stock.Producto.Descripcion, lv.Stock.Producto.NetoGravado, lv.Stock.Producto.PorcentajeIva, lv.Stock.Producto.CostoConIva, lv.Stock.Producto.PreciodeVenta);
             }
-        }
 
-        private void CargarPieComprobante(Venta venta)
-        {
             lbTotal.Text = Convert.ToString(venta.Pago.MontoAPagar);
             lbPago.Text = Convert.ToString(venta.Pago.MontoRecibido);
             lbVuelto.Text = Convert.ToString(venta.Pago.Vuelto);
-            lbBase.Text = Convert.ToString(venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado));
+            lbBase.Text = Convert.ToString(venta.LineasdeVenta.Sum(x => x.Stock.Producto.NetoGravado));
             lbIVA.Text = Convert.ToString(ReglasDeNegocio.IVA);
-            lbImporte.Text = Convert.ToString(venta.LineasdeVenta.Sum(x=>x.Stock.Producto.NetoGravado) * ReglasDeNegocio.IVA);
+            lbImporte.Text = Convert.ToString(venta.LineasdeVenta.Sum(x => x.Stock.Producto.NetoGravado) * ReglasDeNegocio.IVA);
             lbMoneda.Text = "PES";
             lbTipodeCambio.Text = Convert.ToString(1);
         }
@@ -75,6 +68,7 @@ namespace LATIENDA.Presentacion.Vistas
         {
 
         }
+
     }
     public class ComprobanteVistaConPresentador : VistaBase<ComprobantePresentador> { }
 }

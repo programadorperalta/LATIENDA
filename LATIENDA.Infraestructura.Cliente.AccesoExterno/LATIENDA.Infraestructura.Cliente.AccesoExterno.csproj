@@ -60,6 +60,7 @@
     <Compile Include="IAdaptador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAPIClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

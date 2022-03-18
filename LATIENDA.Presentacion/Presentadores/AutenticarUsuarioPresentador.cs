@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LATIENDA.Infraestructura.Cliente.AccesoExterno;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ using LATIENDA.Presentacion.Tareas;
 using LATIENDA.Dominio.Entidades;
 using LATIENDA.Infraestructura.Datos;
 using LATIENDA.Infraestructura.Transversal;
+using System.Windows;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
@@ -17,7 +19,10 @@ namespace LATIENDA.Presentacion.Presentadores
         private readonly IRepositorio _repositorio;
         Sesion _sesionSource;
         Usuario _usuarioSource;
-        
+        //string url = "https://localhost:44346/api/Clientes";
+
+
+
         public AutenticarUsuarioPresentador(IAutenticarUsuarioVista vista,
            IRepositorio repositorio,ISesion sesion) : base(vista,sesion)
         {
@@ -52,6 +57,8 @@ namespace LATIENDA.Presentacion.Presentadores
                 _sesionSource.Usuario = _usuarioSource;
 
                 Vista.MostrarMensaje($"Bienvenido: {_usuarioSource.Empleado.Nombre}",Mensaje.EXITO);
+
+                //MessageBox.Show()
                 IniciarPrograma();
             }
 

@@ -1,0 +1,15 @@
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Prueba.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Prueba.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Prueba.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\LATIENDA.Dominio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.csproj.CopyComplete
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.exe
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.pdb

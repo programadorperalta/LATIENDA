@@ -38,11 +38,11 @@ namespace LATIENDA.Presentacion.Presentadores
 
         public void CargarComprobante()
         {
-
-            Tarea.Venta.Comprobante.Numero = 2; //Autogenerado
+            Tarea.Venta.Comprobante.Numero = 2; //Hacer que se genere automaticamente
             Tarea.Venta.DeterminarComprobante();
             Vista.RecibirComprobante(Tarea.Venta);
-
+            Vista.CargarCuerpoComprobante(Tarea.Venta);
+            //Vista.CargarPieComprobante(Tarea.Venta);
         }
 
         public void ConexionServicioExterno()

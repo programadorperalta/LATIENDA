@@ -1,4 +1,4 @@
-﻿using LATIENDA.Web.API.Models;
+﻿using LATIENDA.Dominio.Entidades;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;

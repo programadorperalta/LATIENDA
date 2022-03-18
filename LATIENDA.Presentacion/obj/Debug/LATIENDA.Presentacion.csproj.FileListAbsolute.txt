@@ -73,3 +73,5 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.pdb
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\LATIENDA.Infraestructura.Cliente.AccesoExterno.exe.config
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\obj\Debug\LATIENDA.Presentacion.Vistas.ComprobanteVista.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Presentacion\bin\Debug\Newtonsoft.Json.xml

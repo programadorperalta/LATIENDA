@@ -1,0 +1,7 @@
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\bin\Debug\LATIENDA.Servicio.dll.config
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\bin\Debug\LATIENDA.Servicio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\bin\Debug\LATIENDA.Servicio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\obj\Debug\LATIENDA.Servicio.csprojAssemblyReference.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\obj\Debug\LATIENDA.Servicio.csproj.CoreCompileInputs.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\obj\Debug\LATIENDA.Servicio.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Servicio\obj\Debug\LATIENDA.Servicio.pdb
