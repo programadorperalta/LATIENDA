@@ -24,6 +24,18 @@ namespace LATIENDA.Web.API
                 .ToTable("Productos")
                 .HasKey(p => p.ID);
 
+            //modelBuilder
+            //    .Entity<Producto>()
+            //    .ToTable("Productos").HasRequired(m => m.Marca).WithMany().HasForeignKey(p => p.MarcaID);
+
+            //modelBuilder
+            //    .Entity<Producto>()
+            //    .ToTable("Productos").HasRequired(t=>t.TipodeTalle).WithMany().HasForeignKey(p => p.TipodeTalleID);
+
+            //modelBuilder
+            //    .Entity<Producto>()
+            //    .ToTable("Productos").HasRequired(r=>r.Rubro).WithMany().HasForeignKey(p => p.RubroID);
+
             modelBuilder
                 .Entity<Venta>()
                 .ToTable("Ventas")
@@ -57,7 +69,7 @@ namespace LATIENDA.Web.API
 
             modelBuilder
                 .Entity<Usuario>()
-                .ToTable("Usuarios").HasKey(u => u.ID);
+                .ToTable("Usuarios").HasRequired(e => e.Empleado).WithMany(e => e.Usuarios).HasForeignKey(u => u.EmpleadoID);
 
             modelBuilder
                 .Entity<Stock>()
@@ -69,7 +81,7 @@ namespace LATIENDA.Web.API
             modelBuilder.Entity<PuntodeVenta>().ToTable("PuntosdeVenta").HasKey(p => p.ID);
 
         }
-
+        public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Marca> Marcas { get; set; }
         public DbSet<Rubro> Rubros { get; set; }
@@ -81,6 +93,5 @@ namespace LATIENDA.Web.API
         public DbSet<TipodeTalle> TipodeTalles { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<TipodePago> TipodePagos { get; set; }
-
     }
 }

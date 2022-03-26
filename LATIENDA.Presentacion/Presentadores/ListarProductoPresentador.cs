@@ -3,6 +3,7 @@ using LATIENDA.Presentacion.Vistas;
 using LATIENDA.Dominio;
 using LATIENDA.Infraestructura.Datos;
 using LATIENDA.Presentacion.Tareas;
+using LATIENDA.Dominio.Entidades;
 
 namespace LATIENDA.Presentacion.Presentadores
 {

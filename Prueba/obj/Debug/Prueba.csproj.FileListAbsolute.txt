@@ -13,3 +13,9 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.csproj.CopyComplete
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.exe
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\obj\Debug\Prueba.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\Prueba\bin\Debug\System.Threading.Tasks.Extensions.xml

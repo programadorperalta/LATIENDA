@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LATIENDA.Dominio;
 
+
 namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
 {
     public static class Adaptador 
@@ -42,14 +43,17 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
                 FECAEDetRequest[] detalle = new AFIPService.FECAEDetRequest[1];
                 
 
+
                 //FEAuthRequest 
                 FEAuthRequest.Cuit = autorizacion.Cuit;
                 FEAuthRequest.Sign = autorizacion.Sign;
                 FEAuthRequest.Token = autorizacion.Token;
 
                 var TIP = serviceAFIP.FECompUltimoAutorizado(FEAuthRequest, 16, venta.Comprobante.TipodeComprobante.GetHashCode());
+
                 var response = serviceAFIP.FEDummy();
-                
+
+                var acumulador =+ TIP.CbteNro;
 
                 //FECAECABRequest
                 FECAECABRequest.CantReg = venta.LineasdeVenta.Count();
@@ -73,8 +77,9 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
                 FECAEDETRequest.Concepto =1;//PRODUCTOS 
                 //FECAEDETRequest.DocTipo = 80;
                 FECAEDETRequest.DocNro = venta.Cliente.Cuit;
-                FECAEDETRequest.CbteDesde = TIP.CbteNro+1;
-                FECAEDETRequest.CbteHasta = 1;
+                FECAEDETRequest.CbteDesde = acumulador;
+                FECAEDETRequest.CbteHasta = acumulador;
+                //CbteDesde y Hasta tienen que tener el mismo valor en este caso. 
                 FECAEDETRequest.CbteFch = $"{venta.Comprobante.Fecha}";
                 FECAEDETRequest.ImpTotal = venta.Pago.MontoAPagar;
                 FECAEDETRequest.ImpTotConc = venta.LineasdeVenta.Sum(x=>x.Stock.Producto.Costo);
@@ -85,12 +90,12 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
                 FECAEDETRequest.MonId = "PES";
                 FECAEDETRequest.MonCotiz = 1;
 
-                for (int i = 0; i < venta.LineasdeVenta.Count(); i++)
-                {
-                    detalle[i] = FECAEDETRequest;
-                }
+                //for (int i = 0; i < venta.LineasdeVenta.Count(); i++)
+                //{
+                //    detalle[i] = FECAEDETRequest;
+                //}
 
-                //detalle[0] = FECAEDETRequest;
+                detalle[0] = FECAEDETRequest;
 
                 //FEDETReq
                 FECAERequest.FeCabReq = FECAECABRequest;

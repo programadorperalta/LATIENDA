@@ -16,7 +16,7 @@ namespace LATIENDA.Dominio
         Usuario BuscarUsuario(Usuario usuarioABuscar);
         void EliminarProducto(int codigo);
         List<Producto> FiltrarLista(string terminoBusqueda);
-        void ModificarProducto(int codigoActual, Producto productoModificado);
+        void ModificarProducto(Producto productoModificado);
         List<Producto> ObtenerListaProductos();
         List<Rubro> ObtenerListaRubros();
         List<Marca> ObtenerListaMarcas();
@@ -30,6 +30,7 @@ namespace LATIENDA.Dominio
         bool ValidarUsuario(Usuario usuario);
         void AgregarCliente(Cliente cliente);
         Cliente BuscarCliente(long cuitoDNI);
+        Empleado BuscarEmpleado(int codigo);
         List<Cliente> ObtenerListadeClientes();
         void EliminarCliente(long cuit);
         void AgregarVenta(Venta venta);

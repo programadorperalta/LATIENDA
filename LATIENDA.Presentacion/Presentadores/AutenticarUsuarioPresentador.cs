@@ -54,12 +54,15 @@ namespace LATIENDA.Presentacion.Presentadores
             if(_repositorio.BuscarUsuario(_usuarioSource) != null)
             {
                 _usuarioSource = _repositorio.BuscarUsuario(_usuarioSource);
-                _sesionSource.Usuario = _usuarioSource;
 
-                Vista.MostrarMensaje($"Bienvenido: {_usuarioSource.Empleado.Nombre}",Mensaje.EXITO);
+                if (_repositorio.ValidarUsuario(_usuarioSource))
+                {
+                    _sesionSource.Usuario = _usuarioSource;
 
-                //MessageBox.Show()
-                IniciarPrograma();
+                    Vista.MostrarMensaje($"Bienvenido: {_repositorio.BuscarEmpleado(_usuarioSource.EmpleadoID).Nombre}", Mensaje.EXITO);
+                    
+                    IniciarPrograma();
+                }
             }
 
             else

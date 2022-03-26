@@ -65,15 +65,7 @@ namespace LATIENDA.Presentacion.Vistas
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
-             
-            if (lista.RowCount != 0)
-            {
-                int codigoEliminar = (int)lista.Rows[lista.SelectedCells[1].RowIndex].Cells[1].Value;
-                Presentador.EliminarProducto(codigoEliminar);
-            }
-            else {
-                DialogResult resultado = MessageBox.Show( "Vuelva a intentar cuando tenga productos cargados", "No existe producto para eliminar", MessageBoxButtons.OK);
-            }
+   
         }
 
         private void ModificarButton_Click(object sender, EventArgs e)
@@ -103,6 +95,19 @@ namespace LATIENDA.Presentacion.Vistas
         private void iconButton1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (lista.RowCount != 0)
+            {
+                int codigoEliminar = (int)lista.Rows[lista.SelectedCells[0].RowIndex].Cells[0].Value;
+                Presentador.EliminarProducto(codigoEliminar);
+            }
+            else
+            {
+                DialogResult resultado = MessageBox.Show("Vuelva a intentar cuando tenga productos cargados", "No existe producto para eliminar", MessageBoxButtons.OK);
+            }
         }
     }
     public class ListarProductosVistaConPresentador: VistaBase<ListarProductoPresentador> { }

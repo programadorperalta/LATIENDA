@@ -99,3 +99,15 @@ C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.pdb
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\bin\LATIENDA.Dominio.dll
 C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\bin\LATIENDA.Dominio.pdb
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Semodificaronalgunasclases.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.csproj.GenerateResource.cache
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.SemodificolaclaseRolEmpleado.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.SemodificolaclaseRolUsuario.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.SemodificoonModelCreating.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022329PM.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022331PM.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022338PM.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022423PM.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022512PM.resources
+C:\Users\PERALTA-PC\Documents\FACULTAD\2021\Ingenieria del Software\Repositorio\LATIENDA\LATIENDA.Web.API\obj\Debug\LATIENDA.Web.API.Migrations.Modificacion21032022515PM.resources

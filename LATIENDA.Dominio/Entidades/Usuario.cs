@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace LATIENDA.Dominio.Entidades
 {
@@ -15,6 +16,7 @@ namespace LATIENDA.Dominio.Entidades
         public string Clave { get; set; }
         public virtual RolUsuario Rolusuario { get; set; }
         public virtual Empleado Empleado { get; set; }
+        public int EmpleadoID { get; set; }
         public byte[] Imagen { get; set; }
         #endregion 
 

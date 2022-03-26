@@ -98,6 +98,7 @@
     <Compile Include="ProductoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio.cs" />
+    <Compile Include="RepositorioAPI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BaseDeDatos\" />
@@ -110,6 +111,10 @@
     <ProjectReference Include="..\LATIENDA.Dominio\LATIENDA.Dominio.csproj">
       <Project>{95dc8d16-e4fb-4719-a929-f5b5add9a1bb}</Project>
       <Name>LATIENDA.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LATIENDA.Infraestructura.Cliente.AccesoExterno\LATIENDA.Infraestructura.Cliente.AccesoExterno.csproj">
+      <Project>{8d90d6a2-91c3-4847-a3e1-a2a938ebe80e}</Project>
+      <Name>LATIENDA.Infraestructura.Cliente.AccesoExterno</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +142,9 @@
     <EmbeddedResource Include="Migrations\202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.resx">
       <DependentUpon>202203172147262_Se agrego el atributo  TipodeDocumento al Cliente.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

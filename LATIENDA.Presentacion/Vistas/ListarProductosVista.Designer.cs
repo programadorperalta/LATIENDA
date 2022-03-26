@@ -122,6 +122,7 @@ namespace LATIENDA.Presentacion.Vistas
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 34);
             this.toolStripButton1.Text = "Eliminar";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator3
             // 

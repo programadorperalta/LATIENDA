@@ -6,6 +6,7 @@ using LATIENDA.Infraestructura.Datos;
 using LATIENDA.Presentacion.Tareas;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using LATIENDA.Infraestructura.Cliente;
 
 namespace LATIENDA.Presentacion.Presentadores
 {
@@ -13,6 +14,10 @@ namespace LATIENDA.Presentacion.Presentadores
     {
         Producto _productoSource;
         private readonly IRepositorio _repositorio;
+
+       
+
+
 
         public AgregarProductoPresentador(IAgregarProductoVista vista, 
             IRepositorio repositorio,ISesion sesion) : base(vista,sesion)

@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using LATIENDA.Infraestructura.Cliente.AccesoExterno;
 using LATIENDA.Dominio;
 using LATIENDA.Dominio.Entidades;
 
 
 namespace LATIENDA.Infraestructura.Datos
 {
-    public class Repositorio : IRepositorio
+    public class Repositorio 
     {
         private ProductoContext _context;
        
@@ -149,20 +151,21 @@ namespace LATIENDA.Infraestructura.Datos
         #endregion
 
         #region Cliente
-        public void AgregarCliente(Cliente cliente)
+        public void AgregarCliente(Dominio.Entidades.Cliente cliente)
         {
-            _context.Clientes.Add(cliente);
-            _context.SaveChanges();
+            //_context.Clientes.Add(cliente);
+            //_context.SaveChanges();
         }
 
-        public Cliente BuscarCliente(long cuitoDNI)
+        public Dominio.Entidades.Cliente BuscarCliente(long cuitoDNI)
         {
-            return _context.Clientes.ToList().Find(c => c.Cuit == cuitoDNI);
+            return AdapterAPI.GetList<Dominio.Entidades.Cliente>("api/Clientes").ToList().Find(c => c.Cuit == cuitoDNI);
         }
 
-        public List<Cliente> ObtenerListadeClientes()
+        public List<Dominio.Entidades.Cliente> ObtenerListadeClientes()
         {
-            return _context.Clientes.ToList();
+            //return _context.Clientes.ToList();
+            return AdapterAPI.GetList<Dominio.Entidades.Cliente>("api/Clientes"); 
         }
 
         public void EliminarCliente(long cuit)

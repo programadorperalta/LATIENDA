@@ -34,7 +34,7 @@ namespace LATIENDA.Presentacion
             container.RegisterType<IListarProductosVista, ListarProductosVista>();
             container.RegisterType<IModificarProductoVista, ModificarProductoVista>();
             container.RegisterType<IComprobanteVista, ComprobanteVista>();
-            container.RegisterSingleton<IRepositorio,Repositorio>();
+            container.RegisterSingleton<IRepositorio, RepositorioAPI>();
             container.RegisterSingleton<ISesion,Sesion>();
             container.RegisterType<IAgregarStockVista, AgregarStockVista>();
             container.RegisterType<IRegistrarVentaVista, RegistrarVentaVista>();

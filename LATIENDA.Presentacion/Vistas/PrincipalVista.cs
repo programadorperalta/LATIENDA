@@ -40,7 +40,8 @@ namespace LATIENDA.Presentacion.Vistas
 
         public void MostrarUsuario(Sesion sesion)
         {
-            txtNombreUsuario.Text = $"Bienvenid@: {sesion.Usuario.Empleado.Nombre} Inicio de sesion: {sesion.FechayHora}";
+            txtNombreUsuario.Text = $"Bienvenid@: {sesion.Usuario.NombredeUsuario} Inicio de sesion: {sesion.FechayHora}";
+            //txtNombreUsuario.Text = $"Bienvenid@: {sesion.Usuario.Empleado.Nombre} Inicio de sesion: {sesion.FechayHora}";
         }
 
 

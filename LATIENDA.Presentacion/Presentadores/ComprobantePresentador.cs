@@ -38,7 +38,7 @@ namespace LATIENDA.Presentacion.Presentadores
 
         public void CargarComprobante()
         {
-            Tarea.Venta.Comprobante.Numero = 2; //Hacer que se genere automaticamente
+            Tarea.Venta.Comprobante.Numero = 3; //Hacer que se genere automaticamente
             Tarea.Venta.DeterminarComprobante();
             Vista.RecibirComprobante(Tarea.Venta);
             Vista.CargarCuerpoComprobante(Tarea.Venta);
@@ -57,10 +57,10 @@ namespace LATIENDA.Presentacion.Presentadores
 
                 MessageBox.Show(response.FeCabResp.Resultado);
 
-                //foreach (var a in response.Errors)
-                //{
-                //    MessageBox.Show(a.Msg);
-                //}
+                foreach (var a in response.Errors)
+                {
+                    MessageBox.Show(a.Msg);
+                }
 
                 //MessageBox.Show(response.Errors.ToString());
                 //if (response.FeCabResp.Resultado.Equals("A"))

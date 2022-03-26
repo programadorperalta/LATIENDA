@@ -14,7 +14,7 @@ namespace LATIENDA.Dominio.Entidades
         public int Legajo { get; set; }
         public string Nombre { get; set; }
         public virtual RolEmpleado RolEmpleado { get; set; }
-        public virtual IList<Usuario> Usuarios { get; set; }
+        public virtual ICollection<Usuario> Usuarios { get; set; }
         #endregion
 
         #region Constructores

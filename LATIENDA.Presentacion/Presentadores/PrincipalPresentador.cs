@@ -38,7 +38,7 @@ namespace LATIENDA.Presentacion.Presentadores
             _tiendaSource = null;
             _tiendaSource = new Tienda();
 
-            Vista.MostrarMensaje("Obteniendo Credenciales espere....",Mensaje.ADVERTENCIA);
+            //Vista.MostrarMensaje("Obteniendo Credenciales espere....",Mensaje.ADVERTENCIA);
             var adaptador = Adaptador.ObtenerAutorizacion();
             Vista.MostrarMensaje("Credenciales Obtenidas con exito!",Mensaje.EXITO);
 

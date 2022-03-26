@@ -16,10 +16,10 @@ namespace LATIENDA.Infraestructura.Datos
         private List<Talle> _talles = new List<Talle>();
         private List<Venta> _ventas = new List<Venta>();
 
-        public void AgregarCliente(Cliente cliente)
-        {
-            throw new NotImplementedException();
-        }
+        //public void AgregarCliente(Cliente cliente)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public void AgregarProducto(Producto nuevoProducto)
         {
@@ -36,10 +36,10 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
-        public Cliente BuscarCliente(long cuitoDNI)
-        {
-            throw new NotImplementedException();
-        }
+        //public Cliente BuscarCliente(long cuitoDNI)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //public void AgregarProducto(Producto nuevoProducto)
         //{        
@@ -102,10 +102,10 @@ namespace LATIENDA.Infraestructura.Datos
             throw new NotImplementedException();
         }
 
-        public List<Cliente> ObtenerListadeClientes()
-        {
-            throw new NotImplementedException();
-        }
+        //public List<Cliente> ObtenerListadeClientes()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public List<TipodePago> ObtenerListadeTiposdePagos()
         {

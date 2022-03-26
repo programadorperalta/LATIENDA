@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
 {
@@ -16,13 +19,19 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
             Timeout = TimeSpan.FromMinutes(5);
         }
 
-
-        public static async Task<string> PostURI(Uri u, HttpContent c)
+        public async Task<string> PostURI<T>(string u, T clase)
+            where T:class
         {
             var response = string.Empty;
+
+            var json = JsonConvert.SerializeObject(clase); //primero serializar el objeto
+
+            var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+
             using (var client = new HttpClient())
             {
-                HttpResponseMessage result = await client.PostAsync(u, c);
+                HttpResponseMessage result = await client.PostAsync(new Uri($"{BaseAddress.AbsoluteUri}{u}"), stringContent);
+                
                 if (result.IsSuccessStatusCode)
                 {
                     response = result.StatusCode.ToString();
@@ -32,13 +41,35 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
         }
 
 
-
-        public static async Task<string> GetURI(Uri u)
+        public async Task<string> PutURI<T>(string u, T clase)
+            where T : class
         {
             var response = string.Empty;
+
+            var json = JsonConvert.SerializeObject(clase); //primero serializar el objeto
+
+            var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+
             using (var client = new HttpClient())
             {
-                HttpResponseMessage result = await client.GetAsync(u);
+                HttpResponseMessage result = await client.PutAsync(new Uri($"{BaseAddress.AbsoluteUri}{u}"), stringContent);
+
+                if (result.IsSuccessStatusCode)
+                {
+                    response = result.StatusCode.ToString();
+                }
+            }
+            return response;
+        }
+
+
+        public async Task<string> GetURI(string uri)
+        {
+            var response = string.Empty;
+            
+            using (var client = new HttpClient())
+            {
+                HttpResponseMessage result = await client.GetAsync(new Uri($"{BaseAddress.AbsoluteUri}{uri}"));
                 if (result.IsSuccessStatusCode)
                 {
                     response = await result.Content.ReadAsStringAsync();
@@ -46,6 +77,25 @@ namespace LATIENDA.Infraestructura.Cliente.AccesoExterno
             }
             return response;
         }
+
+
+        public async Task<string> DeleteURI(string u)
+        {
+            var response = string.Empty;
+
+            using (var client = new HttpClient())
+            {
+                HttpResponseMessage result = await client.DeleteAsync(new Uri($"{BaseAddress.AbsoluteUri}{u}"));
+
+                if (result.IsSuccessStatusCode)
+                {
+                    response = result.StatusCode.ToString();
+                }
+            }
+            return response;
+        }
+
+
     }
 
 

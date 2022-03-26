@@ -86,7 +86,7 @@ namespace LATIENDA.Infraestructura.Datos
         public DbSet<Talle> Talles { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<TipodeTalle> TipodeTalles { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Dominio.Entidades.Cliente> Clientes { get; set; }
         public DbSet<TipodePago> TipodePagos { get; set; }
 
     }

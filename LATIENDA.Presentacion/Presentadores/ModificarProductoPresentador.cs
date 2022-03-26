@@ -66,7 +66,7 @@ namespace LATIENDA.Presentacion.Presentadores
                 _productoSource.Rubro = producto.Rubro;
                 _productoSource.TipodeTalle = producto.TipodeTalle;
 
-                _repositorio.ModificarProducto(Tarea.ProductoId, _productoSource);
+                _repositorio.ModificarProducto(_productoSource);
                 Vista.MostrarMensaje("Producto modificado con exito.", Mensaje.EXITO);
                 
                 

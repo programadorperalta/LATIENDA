@@ -8,7 +8,7 @@ namespace LATIENDA.Dominio
 {
     public enum RolEmpleado
     {
-        VENDEDOR, 
-        ADMINISTRADOR
+        VENDEDOR = 2, 
+        ADMINISTRADOR = 1
     }
 }
